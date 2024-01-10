@@ -237,6 +237,9 @@ form textarea{
     color: #fff;
     background: var(--headingText);
 }
+.button-and-cancel button:hover{
+    background: var(--normalText);
+}
 .button-and-cancel i{
     color: red;
     font-size: 150%;
