@@ -188,13 +188,6 @@ footer a p{
     background: #ffffffbb;
     z-index: 700;
 }
-.popup-container i{
-    color: red;
-    font-size: 200%;
-    padding: .17em;
-    border-radius: 50%;
-    border: 2px solid red;
-}
 .feedbackPopup{
     display: flex;
     align-items: center;
@@ -228,4 +221,25 @@ form textarea{
     background: #aaaaaa25;
     padding: 1em;
     outline: none;
+}
+.button-and-cancel{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+}
+.button-and-cancel button{
+    padding: 1em;
+    width: 100%;
+    border-radius: .5em;
+    border: none;
+    color: #fff;
+    background: var(--headingText);
+}
+.button-and-cancel i{
+    color: red;
+    font-size: 150%;
+    padding: .1em;
+    border-radius: 50%;
+    border: 2px solid red;
 }
