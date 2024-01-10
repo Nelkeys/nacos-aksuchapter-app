@@ -59,7 +59,7 @@ header h2 span{
     margin-bottom: 1em;
 }
 .link p{
-    color: var(--headingText);
+    letter-spacing: 1.5px;
 }
 .link img{
     width: 13em;
@@ -67,13 +67,16 @@ header h2 span{
 }
 .purple{
     background: var(--purple);
+    color: var(--purpleText);
 }
 .blue{
     background: var(--blue);
+    color: var(--blueText);
     padding: 0 3em 0 1em;
 }
 .green{
     background: var(--green);
+    color: var(--greenText);
 }
 
 

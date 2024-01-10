@@ -5,9 +5,17 @@
     --white:#F0F4FA;
     --grey:#ADB4BF;
 
+
     --purple: #8000803d;
-    --blue: #0000ff2d;
+    --purpleText:#800080d5;
+
+    --blue: #0000802d;
+    --blueText: #000080d5;
+
+    
     --green: #00800033;
+    --greenText: #008000ce;
+
 
     --headingText: #3f3f3f;
     --normalText:#7b7d80;
