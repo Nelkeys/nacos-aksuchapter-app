@@ -44,7 +44,13 @@
 }
 a{
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 }
+a:active,
+a:hover{
+    outline: none; /* Removes the outline that appears on some browsers */
+  }
+  
 body{
     background: #fbfbfb;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
