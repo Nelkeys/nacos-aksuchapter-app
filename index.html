@@ -3,12 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/images/nacos-logo.png">
+    <link rel="icon" type="image/png" href="assets/logo/logo.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/index.css">
     <title>index</title>
 </head>
 <body>
+
+    <div class="popup-container">
+        <div class="feedbackPopup">
+            <p><b>PLEASE FILL THIS FORM</b></p>
+
+            <form action="">
+                <textarea name="" id=""></textarea>
+            </form>
+
+            <i class='bx bx-x' onclick="hideMesaagePopup()"></i>
+        </div>
+    </div>
+
 
     <div class="loader-container">
         <div class="percentage" id="percentage"></div>
@@ -24,10 +37,22 @@
         </div>
 
         <div class="icons">
-            <i class='bx bx-message-dots'></i>
+            <i class='bx bx-message-dots' onclick="showMessagePopup()"></i>
             <i class='bx bx-refresh'  onclick="reloadHomePage()"></i>
         </div>
     </header>
+
+
+
+
+    <script>
+        function showMessagePopup() {
+            document.querySelector(".popup-container").style.display = "flex";
+        }
+        function hideMesaagePopup() {
+            document.querySelector(".popup-container").style.display = "none";
+        }
+    </script>
 
 
 

@@ -167,3 +167,65 @@ footer a p{
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
+
+
+
+
+
+
+
+
+
+  .popup-container{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    background: #ffffffbb;
+    z-index: 700;
+}
+.popup-container i{
+    color: red;
+    font-size: 200%;
+    padding: .17em;
+    border-radius: 50%;
+    border: 2px solid red;
+}
+.feedbackPopup{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    box-shadow: 0 0 7px var(--grey);
+    background: #fff;
+    padding: 1em;
+    margin: 1em;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    right: 0;
+    border-radius: 1em;
+}
+.feedbackPopup p{
+    margin-top: 1.5em;
+    margin-bottom: .5em ;
+    font-size: 120%;
+    color: var(--primaryColor);
+}
+form{
+    width: 100%;
+}
+form textarea{
+    width: 100%;
+    height: 12em;
+    border: none;
+    resize: none;
+    border-radius: .5em;
+    background: #aaaaaa25;
+    padding: 1em;
+    outline: none;
+}
