@@ -227,6 +227,7 @@ form textarea{
     align-items: center;
     gap: 1em;
     width: 100%;
+    margin-top: .8em;
 }
 .button-and-cancel button{
     padding: 1em;
