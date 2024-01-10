@@ -9,6 +9,14 @@
     <title>index</title>
 </head>
 <body>
+
+    <div class="loader-container">
+        <div class="percentage" id="percentage"></div>
+        <div class="loader"></div>
+    </div>
+
+
+
     <header>
         <div class="welcome">
             <h2>Wel<span>come</span></h2>
@@ -17,7 +25,7 @@
 
         <div class="icons">
             <i class='bx bx-message-dots'></i>
-            <i class='bx bx-refresh'></i>
+            <i class='bx bx-refresh'  onclick="reloadHomePage()"></i>
         </div>
     </header>
 
@@ -72,5 +80,9 @@
             <p>Class Leaders</p>
         </a>
     </footer>
+
+
+
+    <script src="js/loader.js"></script>
 </body>
 </html>
