@@ -1,0 +1,13 @@
+@import url(/css/general/styles.css) all;
+
+
+
+.go-back{
+    margin-top: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    text-decoration: underline;
+    color: var(--normalText);
+}
