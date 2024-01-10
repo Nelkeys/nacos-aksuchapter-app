@@ -10,16 +10,31 @@ header{
     align-items: start;
     justify-content: space-between;
 }
+header h2{
+    color: var(--primaryColor);
+}
+header h2 span{
+    color: var(--headingText);
+}
 .welcome p{
     margin-top: 1em;
+    color: var(--normalText);
 }
 .icons{
     display: flex;
     align-items: center;
     gap: 1em ;
-    font-size: 140%;
+    font-size: 160%;
+    box-shadow:  0 1px 10px #dbdada;
+    padding: .2em .5em;
+    border-radius: 1em;
 }
-
+.bx-message-dots{
+    color: var(--primaryColor);
+}
+.bx-refresh{
+    color: red;
+}
 
 
 
