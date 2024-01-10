@@ -60,7 +60,7 @@ header{
     top: 1em;
     left: 0;
     right: 0;
-    padding: 1em;
+    padding: .5em 1em;
     color: var(--headingText);
 }
 
