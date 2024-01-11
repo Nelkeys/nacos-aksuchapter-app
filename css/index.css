@@ -32,6 +32,7 @@ header h2 span{
     padding: .2em .5em;
     border-radius: 1em;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 .bx-message-dots{
     color: var(--primaryColor);
