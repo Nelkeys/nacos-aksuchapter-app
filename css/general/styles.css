@@ -63,6 +63,13 @@ body{
     background: #fff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 14px;
+
+
+
+    -webkit-user-select: none; /* Disable text selection for WebKit browsers */
+    -moz-user-select: none; /* Disable text selection for Mozilla Firefox */
+    -ms-user-select: none; /* Disable text selection for Microsoft browsers */
+    user-select: none; /* Disable text selection for other browsers */
 }
 
 header{
