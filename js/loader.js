@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
   
 
-
-function reloadHomePage() {
-    window.location.reload();
+  function reloadHomePage() {
+      window.location.reload();
 }

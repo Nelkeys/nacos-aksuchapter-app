@@ -244,6 +244,7 @@ form textarea{
     border: none;
     color: #fff;
     background: var(--headingText);
+    cursor: pointer;
 }
 .button-and-cancel button:hover{
     background: var(--normalText);
@@ -254,4 +255,8 @@ form textarea{
     padding: .1em;
     border-radius: 50%;
     border: 2px solid red;
+    cursor: pointer;
+}
+.button-and-cancel i:hover{
+    background: var(--grey);
 }
