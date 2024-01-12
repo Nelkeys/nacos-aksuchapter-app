@@ -1,11 +1,16 @@
 @import url(/css/general/styles.css) all;
 
 
+header{
+    border-bottom-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+}
 header p{
     font-size: 150%;
 }
+
 .notification-boxes{
-    margin: 4em 0 5em 0;
+    margin: 5em 0 5em 0;
     padding: 0 1.5em;
 }
 
