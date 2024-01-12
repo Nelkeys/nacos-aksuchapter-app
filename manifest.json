@@ -3,7 +3,7 @@
     "short_name": "AK22 Class",
     "description": "A NACOS app for managing and recieving information",
     "start_url": "/index.html",
-    "display": "fullscreen",
+    "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",
     "version": "1.0.0",
