@@ -3,3 +3,53 @@
 header p{
     font-size: 150%;
 }
+
+
+.illustration{
+    padding: 2em 1.5em 0 1.5em;
+    margin-top: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--headingText);
+    font-size: 110%;
+}
+.illustration img{
+    width: 13em;
+    height: 10em;
+}
+
+
+.course-list{
+    padding: 2em 1.5em;
+    margin: 0 0 2em 0;
+}
+
+
+.course{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    box-shadow: 0 5px 10px #aaaaaa70;
+    padding: 1em 2em;
+    border-radius: .5em;
+    margin-bottom: 1em;
+}
+.course i{
+    color: rgb(0, 196, 0);
+    font-size: 200%;
+}
+.c-code-and-c-title{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    gap: .2em;
+}
+.c-code-and-c-title h3{
+    font-weight: 300;
+    color: var(--primaryColor);
+}
+.c-code-and-c-title p{
+    font-size: 80%;
+    color: var(--normalText);
+}
