@@ -54,7 +54,7 @@ header p{
     gap: .2em;
 }
 .c-code-and-c-title h3{
-    font-weight: 300;
+    font-weight: 500;
     color: var(--primaryColor);
 }
 .c-code-and-c-title p{
