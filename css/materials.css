@@ -55,6 +55,7 @@ header p{
 }
 .c-code-and-c-title h3{
     font-weight: 500;
+    font-size: 90%;
     color: var(--primaryColor);
 }
 .c-code-and-c-title p{
