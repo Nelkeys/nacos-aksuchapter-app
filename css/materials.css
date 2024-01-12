@@ -21,6 +21,7 @@ header p{
 .illustration p{
     font-size: 110%;
     font-weight: 550;
+    color: var(--primaryColor);
 }
 .illustration img{
     width: 13em;
