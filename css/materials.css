@@ -30,10 +30,13 @@ header p{
     display: flex;
     align-items: center;
     gap: 1em;
-    box-shadow: 0 5px 10px #aaaaaa70;
+    box-shadow: 0 0 7px #aaaaaa70;
     padding: 1em 2em;
     border-radius: .5em;
     margin-bottom: 1em;
+}
+.course:hover{
+    background: #aaaaaa1f;
 }
 .course i{
     color: rgb(0, 196, 0);
