@@ -1,1 +1,5 @@
 @import url(/css/general/styles.css) all;
+
+header p{
+    font-size: 150%;
+}

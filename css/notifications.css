@@ -1,7 +1,47 @@
 @import url(/css/general/styles.css) all;
 
 
+header p{
+    font-size: 150%;
+}
+.notification-boxes{
+    margin: 4em 0 5em 0;
+    padding: 0 1.5em;
+}
 
+.not-box{
+    background: var(--notificationBox);
+    padding: 2em 1.5em;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    gap: 1em;
+    border-radius: .2em;
+    margin-bottom: 1em;
+}
+.not-box-top{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    font-size: 80%;
+    font-weight: 450;
+}
+.dot{
+/**    background: var(--primaryColor); **/
+    background: rgb(28, 180, 28);
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+}
 
+.title{
+    font-size: 70%;
+    color: var(--primaryColor);
+}
+.not-content{
+    color: var(--headingText);
+    font-size: 85%;
+    font-weight: 450;
+}
 
 

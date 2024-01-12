@@ -23,6 +23,7 @@ fetch("https://formspree.io/f/xkndgnaj", {
 })
 .catch(error => {
     console.error("Error submitting the form:", error);
+    alert("Feedback not sent! Check network connection and try again");
 });
 }
 

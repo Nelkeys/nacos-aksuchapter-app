@@ -4,6 +4,7 @@
     --primaryColor:#164BA1;
     --white:#F0F4FA;
     --grey:#ADB4BF;
+    --notificationBox:#adb4bf36;
 
 
     --purple: #8000803d;
@@ -75,14 +76,15 @@ body{
 header{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     gap: 2em;
     position: fixed;
-    top: 1em;
+    top: 0;
     left: 0;
     right: 0;
-    padding: .5em 1em;
+    padding: 1em 1.5em;
     color: var(--headingText);
+    background: #fff;
 }
 
 
@@ -105,7 +107,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 0 1em;
+    padding: 0;
     background: #fff;
     box-shadow: 0 0 3px #d6d6d6;
 }
