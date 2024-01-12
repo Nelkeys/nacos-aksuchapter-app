@@ -18,7 +18,7 @@ header h2 span{
     color: var(--headingText);
 }
 .welcome p{
-    margin-top: 2em;
+    margin-top: 3em;
     color: var(--normalText);
 }
 .welcome P span{
@@ -47,7 +47,7 @@ header h2 span{
 
 
 .link-container{
-    padding: 2em 1.5em 1em 1.5em;
+    padding: 3em 1.5em 1em 1.5em;
     margin: 0em 0 2em 0;
 }
 

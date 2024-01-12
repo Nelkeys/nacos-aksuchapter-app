@@ -1,6 +1,6 @@
 {
     "name": "AK22 Class App",
-    "short_name": "'22ClA",
+    "short_name": "'AK22 Class",
     "description": "A NACOS app for managing and recieving information",
     "start_url": "/index.html",
     "display": "standalone",

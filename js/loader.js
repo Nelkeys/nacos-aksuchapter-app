@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector(".loader-container").style.display = "none";
         contentElement.style.display = "block";
       }
-    }, 20);
+    }, 10);
 });
   
 
