@@ -20,8 +20,8 @@ header p{
 }
 .illustration p{
     font-size: 110%;
-    font-weight: 550;
-    color: var(--primaryColor);
+    font-weight: 500;
+    color: var(--headingText);
 }
 .illustration img{
     width: 13em;
