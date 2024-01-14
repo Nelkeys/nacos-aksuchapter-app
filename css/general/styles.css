@@ -1,5 +1,4 @@
 
-
 :root{
     --primaryColor:#0d2296;
     --white:#F0F4FA;
@@ -128,8 +127,8 @@ footer a{
 }
 /**
 footer a:hover{
-    background: #;
-}. **/
+    background: #aaaaaa1f;
+}
 footer a i{
     font-size: 120%;
     margin-top: .5em;
