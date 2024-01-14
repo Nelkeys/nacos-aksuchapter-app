@@ -124,10 +124,12 @@ footer a{
     text-decoration: none;
     width: 100%;
     color: var(--grey);
+    transition: .5s ease-in-out;
 }
+/**
 footer a:hover{
-    background: var(--grey);
-}
+    background: #;
+}. **/
 footer a i{
     font-size: 120%;
     margin-top: .5em;
