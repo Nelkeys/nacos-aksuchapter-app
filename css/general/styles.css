@@ -125,6 +125,9 @@ footer a{
     width: 100%;
     color: var(--grey);
 }
+footer a:hover{
+    background: var(--grey);
+}
 footer a i{
     font-size: 120%;
     margin-top: .5em;
