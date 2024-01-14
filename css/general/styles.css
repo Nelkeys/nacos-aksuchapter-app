@@ -125,7 +125,7 @@ footer a{
     color: var(--grey);
     transition: .5s ease-in-out;
 }
-/**
+
 footer a:hover{
     background: #aaaaaa1f;
 }
