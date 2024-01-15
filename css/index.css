@@ -91,5 +91,25 @@ header h2 span{
 
 
 
+/* Media query for iPhone 12 portrait mode */
+@media only screen 
+  and (min-width: 1170px) 
+  and (max-width: 2532px) 
+  and (orientation: portrait) {
+
+  /* Your styles for iPhone 12 portrait mode go here */
+
+
+    .welcome p{
+        margin-top: 20em;
+    }
+}
+
+
+
+
+
+
+
 
   
