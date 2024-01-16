@@ -65,7 +65,7 @@ body{
     font-size: 14px;
 
 
-    
+
 
     -webkit-user-select: none; /* Disable text selection for WebKit browsers */
     -moz-user-select: none; /* Disable text selection for Mozilla Firefox */
@@ -232,13 +232,19 @@ form textarea{
 
 
 
-/** Loader section**/
-.barba-container {
-    transition: opacity 0.5s;
-}
+
+
+
+
+
+
+html.is-changing .transition-fade {
+    transition: opacity 0.25s;
+    opacity: 1;
+  }
   
-.barba-container.is-animating {
-    opacity: 0.5;
-    pointer-events: none;
-}
+  html.is-animating .transition-fade {
+    opacity: 0;
+  }
+  
    
