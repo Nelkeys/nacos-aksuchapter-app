@@ -1,7 +1,0 @@
-This app is for Ak22 Computer science students. It is built to relieve the leaders of the class from the stress of continuous posting of documents on the group and looking for it after some time.
-
-It enables the user to view results which are encrypted and can only be allowed to be viewed by the admins of this app.
-
-There are also sections for both the class timetable and exam timetable.
-
-New information coming will be posted in the notification segment. 

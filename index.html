@@ -4,54 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/assets/logo/logo.png">
-    <!-- Favicon declaration -->
-
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- External stylesheet for icons -->
-
     <link rel="stylesheet" href="/css/index.css">
-    <!-- Internal stylesheet -->
-
     <script src="/js/service-worker.js"></script>
-    <!-- JavaScript file for service worker -->
-
     <link rel="manifest" href="/manifest.json">
-    <!-- Web app manifest file -->
-
     <title>Home | AK22 Class App</title>
-    <!-- Page title -->
 </head>
-<body>
+<body id="app">
 
-    <!-- Feedback popup container -->
+    
     <div class="popup-container">
         <div class="feedbackPopup">
             <p><b>SEND YOUR FEEDBACK &#x1F604;</b></p>
-            <!-- Feedback message header -->
-
             <form id="feedbackForm" action="https://formspree.io/f/xkndgnaj" method="POST" onsubmit="submitForm()">
-                <!-- Feedback form using POST method -->
-
                 <textarea name="message" id="feedbackMessage" required></textarea>
-                <!-- Textarea for user feedback input -->
-
                 <div class="button-and-cancel">
-                    <!-- Container for submit button and cancel icon -->
                     <button type="submit">Send</button>
-                    <!-- Submit button for sending feedback -->
                     <i class='bx bx-x' onclick="hideMessagePopup()"></i>
-                    <!-- Cancel icon for closing the feedback popup -->
                 </div>
             </form>
         </div>
     </div>
 
-    <!-- Loader container 
-    <div class="loader-container">
-        <div class="percentage" id="percentage"></div>
-        <div class="loader"></div>
-    </div>
-    -->
+   
 
     <div id="loader-wrapper">
         <div id="loader"></div>
@@ -115,19 +90,13 @@
             <i class='bx bx-bell' ></i>
             <p>Notifications</p>
         </a>
-
-        <!--
-        <a href="class-leaders.html">
-            <i class='bx bx-user'></i>
-            <p>Class Leaders</p>
-        </a>
-        -->
     </footer>
 
 
 
     
-    <script src="js/loader.js"></script>
+
+    
     <script src="js/message.js"></script>
 </body>
 </html>
