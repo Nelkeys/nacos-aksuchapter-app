@@ -1,3 +1,5 @@
+/** 
+
 document.addEventListener("DOMContentLoaded", function () {
     // Simulate loading process
     let percentageElement = document.getElementById("percentage");
@@ -21,3 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
   function reloadHomePage() {
       window.location.reload();
 }
+  **/
+
+
+
+document.onreadystatechange = function () {
+  if (document.readyState === "complete") {
+      // Hide the loader when the page is fully loaded
+      document.getElementById("loader-wrapper").style.display = "none";
+  }
+};
