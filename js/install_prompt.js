@@ -1,9 +1,14 @@
-// Check if the app is already installed
-window.addEventListener('beforeinstallprompt', (event) => {
+ // Check if the app is already installed
+ window.addEventListener('beforeinstallprompt', (event) => {
     // Prevent Chrome 76 and later from showing the default install prompt
     event.preventDefault();
     // Display your custom install banner/modal
-    document.getElementById('pwa-install-banner').style.display = 'block';
+    document.getElementById('pwa-install-banner').style.display = 'flex';
+
+    // Auto-hide the banner after 5 seconds
+    setTimeout(() => {
+        document.getElementById('pwa-install-banner').style.display = 'none';
+    }, 5000);
 
     // Store the event for later use
     let deferredPrompt = event;
