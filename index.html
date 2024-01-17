@@ -51,19 +51,19 @@
 
 
     <section class="link-container">
-        <a href="no-data.html" class="link purple">
+        <a href="no-data.html" class="link purple" onclick="showLoader()">
             <p><b>Class Time Table</b></p>
 
             <img src="assets/illustrations/time-table.svg" alt="">
         </a>
 
-        <a href="no-data.html" class="link blue">
+        <a href="no-data.html" class="link blue" onclick="showLoader()">
             <img src="assets/illustrations/result.svg" alt="">
 
             <p><b>Results</b></p>
         </a>
 
-        <a href="no-data.html" class="link green">
+        <a href="no-data.html" class="link green" onclick="showLoader()">
             <p><b>Exam Time Table</b></p>
 
             <img src="assets/illustrations/exam.svg" alt="">
@@ -105,16 +105,5 @@
 
 
     <script src="js/message.js"></script>
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('js/service-worker.js')
-                .then(registration => {
-                    console.log('Service Worker registered with scope:', registration.scope);
-                })
-                .catch(error => {
-                    console.error('Service Worker registration failed:', error);
-                });
-        }
-    </script>
 </body>
 </html>
