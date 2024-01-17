@@ -211,9 +211,7 @@ footer a p{
 
 
 #pwa-install-banner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
