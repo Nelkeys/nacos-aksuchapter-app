@@ -10,10 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function showLoader() {
     document.getElementById('loader').style.display = 'block';
+    document.getElementById('overlay').style.display = 'block';
 }
 
 function hideLoader() {
     document.getElementById('loader').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
 }
 
 
