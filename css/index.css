@@ -67,7 +67,7 @@ form textarea{
     background: var(--headingText);
     cursor: pointer;
 }
-.button-and-cancel button:hover{
+.button-and-cancel button:active{
     background: var(--normalText);
 }
 .button-and-cancel i{
@@ -78,7 +78,7 @@ form textarea{
     border: 2px solid red;
     cursor: pointer;
 }
-.button-and-cancel i:hover{
+.button-and-cancel i:active{
     background: var(--grey);
 }
 

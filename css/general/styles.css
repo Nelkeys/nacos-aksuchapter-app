@@ -127,7 +127,7 @@ footer a{
     transition: .5s ease-in-out;
 }
 
-footer a:hover{
+footer a:active{
     background: #aaaaaa1f;
 }
 footer a i{

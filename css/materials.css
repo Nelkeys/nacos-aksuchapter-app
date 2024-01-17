@@ -44,7 +44,7 @@ header p{
     border-radius: .5em;
     margin-bottom: 1em;
 }
-.course:hover{
+.course:active{
     background: #aaaaaa1f;
 }
 .course i{
