@@ -248,7 +248,7 @@ form textarea{
 }
 
 .loader {
-    border: 5px solid #fcfcfc;
+    border: 5px solid #acacac;
     border-top: 5px solid #3498db;
     border-radius: 50%;
     width: 50px;
@@ -260,6 +260,7 @@ form textarea{
     left: 50%;
     margin-top: -25px;
     margin-left: -25px;
+    z-index: 1000;
 }
 
 @keyframes spin {
