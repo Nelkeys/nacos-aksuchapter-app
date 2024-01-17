@@ -1,3 +1,4 @@
+
 function submitForm() {
     // Prevent the default form submission
 event.preventDefault();
@@ -34,3 +35,4 @@ function showMessagePopup() {
 function hideMessagePopup() {
     document.querySelector(".popup-container").style.display = "none";
 }
+

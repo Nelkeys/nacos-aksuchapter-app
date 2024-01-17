@@ -22,7 +22,7 @@
             <form id="feedbackForm" action="https://formspree.io/f/xkndgnaj" method="POST" onsubmit="submitForm()">
                 <textarea name="message" id="feedbackMessage" required></textarea>
                 <div class="button-and-cancel">
-                    <button type="submit">Send</button>
+                    <button type="submit" onclick="showLoader()">Send</button>
                     <i class='bx bx-x' onclick="hideMessagePopup()"></i>
                 </div>
             </form>
