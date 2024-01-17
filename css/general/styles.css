@@ -248,7 +248,7 @@ form textarea{
 }
 
 .loader {
-    border: 5px solid #f0f0f0;
+    border: 5px solid #fcfcfc;
     border-top: 5px solid #3498db;
     border-radius: 50%;
     width: 50px;
