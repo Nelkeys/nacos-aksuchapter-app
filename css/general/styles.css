@@ -192,8 +192,8 @@ footer a p{
     100% { transform: rotate(360deg); }
 }
 @keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.2); }
+    0%, 100% { transform: scale(.7); }
+    50% { transform: scale(1.7); }
 }
 
    
