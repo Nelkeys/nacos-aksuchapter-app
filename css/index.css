@@ -3,6 +3,97 @@
 
 
 
+
+.popup-container{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    background: #ffffffbb;
+    z-index: 700;
+}
+.feedbackPopup{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    box-shadow: 0 0 7px var(--grey);
+    background: #fff;
+    padding: 1em;
+    margin: 1em;
+    position: fixed;
+    top: 20%;
+    left: 0;
+    right: 0;
+    border-radius: 1em;
+}
+.feedbackPopup p{
+    margin-top: 1.5em;
+    margin-bottom: .5em ;
+    font-size: 120%;
+    color: var(--primaryColor);
+}
+form{
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form textarea{
+    width: 100%;
+    height: 12em;
+    border: none;
+    resize: none;
+    border-radius: .5em;
+    background: #aaaaaa25;
+    padding: 1em;
+    outline: none;
+}
+.button-and-cancel{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+    margin-top: .8em;
+    -webkit-tap-highlight-color: transparent;
+}
+.button-and-cancel button{
+    padding: 1em;
+    width: 100%;
+    border-radius: .5em;
+    border: none;
+    color: #fff;
+    background: var(--headingText);
+    cursor: pointer;
+}
+.button-and-cancel button:hover{
+    background: var(--normalText);
+}
+.button-and-cancel i{
+    color: red;
+    font-size: 150%;
+    padding: .1em;
+    border-radius: 50%;
+    border: 2px solid red;
+    cursor: pointer;
+}
+.button-and-cancel i:hover{
+    background: var(--grey);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 header{
     position: static;
     padding: 2.5em 1.5em 0 1.5em;
@@ -84,26 +175,6 @@ header h2 span{
 
 
 
-
-
-
-
-
-
-
-/* Media query for iPhone 12 portrait mode */
-@media only screen 
-  and (min-width: 1170px) 
-  and (max-width: 2532px) 
-  and (orientation: portrait) {
-
-  /* Your styles for iPhone 12 portrait mode go here */
-
-
-    .welcome p{
-        margin-top: 20em;
-    }
-}
 
 
 
