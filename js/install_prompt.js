@@ -9,25 +9,12 @@ function handleBeforeInstallPrompt(event) {
     // Stash the event so it can be triggered later
     deferredPrompt = event;
 
-    // Display a custom install banner
-    showInstallBanner();
+    // You can display an alert or a custom UI element here
+    // For simplicity, we'll use an alert in this example
+    alert('Install our PWA for a better experience!');
 }
 
-function showInstallBanner() {
-    // Create a banner element
-    const banner = document.createElement('div');
-    banner.id = 'install-banner';
-    banner.innerHTML = `
-        <p>Install our PWA for a better experience!</p>
-        <button onclick="installPWA()">Install</button>
-        <button onclick="dismissBanner()">Dismiss</button>
-    `;
-
-    // Add the banner to the document body
-    document.body.appendChild(banner);
-}
-
-function installPWA() {
+function showInstallPrompt() {
     if (deferredPrompt) {
         // Show the install prompt
         deferredPrompt.prompt();
@@ -40,24 +27,9 @@ function installPWA() {
                 console.log('User dismissed the install prompt');
             }
 
-            // Remove the banner
-            removeInstallBanner();
-
             // Clear the deferredPrompt variable
             deferredPrompt = null;
         });
-    }
-}
-
-function dismissBanner() {
-    // Remove the banner
-    removeInstallBanner();
-}
-
-function removeInstallBanner() {
-    const banner = document.getElementById('install-banner');
-    if (banner) {
-        banner.remove();
     }
 }
 
