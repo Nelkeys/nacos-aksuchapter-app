@@ -1,65 +1,29 @@
-// installPrompt.js
-
-let deferredPrompt;
-
-function handleBeforeInstallPrompt(event) {
-    // Prevent the default prompt
+// Check if the app is already installed
+window.addEventListener('beforeinstallprompt', (event) => {
+    // Prevent Chrome 76 and later from showing the default install prompt
     event.preventDefault();
+    // Display your custom install banner/modal
+    document.getElementById('pwa-install-banner').style.display = 'block';
 
-    // Stash the event so it can be triggered later
-    deferredPrompt = event;
-
-    // Display a custom install banner
-    showInstallBanner();
-}
-
-function showInstallBanner() {
-    // Create a banner element
-    const banner = document.createElement('div');
-    banner.id = 'install-banner';
-    banner.innerHTML = `
-        <p>Install our PWA for a better experience!</p>
-        <button onclick="installPWA()">Install</button>
-        <button onclick="dismissBanner()">Cancel</button>
-    `;
-
-    // Add the banner to the document body
-    document.body.appendChild(banner);
-}
-
-function installPWA() {
-    if (deferredPrompt) {
-        // Show the install prompt
+    // Store the event for later use
+    let deferredPrompt = event;
+    
+    // Handle the install button click
+    document.getElementById('install-button').addEventListener('click', () => {
+        // Show the browser's install prompt
         deferredPrompt.prompt();
-
         // Wait for the user to respond to the prompt
         deferredPrompt.userChoice.then((choiceResult) => {
+            // If the user accepted the prompt
             if (choiceResult.outcome === 'accepted') {
                 console.log('User accepted the install prompt');
             } else {
                 console.log('User dismissed the install prompt');
             }
-
-            // Remove the banner
-            removeInstallBanner();
-
-            // Clear the deferredPrompt variable
+            // Reset the deferredPrompt variable
             deferredPrompt = null;
+            // Hide the custom install banner/modal
+            document.getElementById('pwa-install-banner').style.display = 'none';
         });
-    }
-}
-
-function dismissBanner() {
-    // Remove the banner
-    removeInstallBanner();
-}
-
-function removeInstallBanner() {
-    const banner = document.getElementById('install-banner');
-    if (banner) {
-        banner.remove();
-    }
-}
-
-// Attach the event listener to the window
-window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+    });
+});
