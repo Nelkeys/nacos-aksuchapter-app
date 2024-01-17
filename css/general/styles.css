@@ -171,11 +171,11 @@ footer a p{
 }
 
 .loader {
-    border: 5px solid #acacac;
-    border-top: 5px solid #3498db;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    border: 7px solid #acacac;
+    border-top: 7px solid #3498db;
+    border-radius: 25%;
+    width: 30px;
+    height: 30px;
     animation: spin 1s linear infinite;
     display: none;
     position: fixed;
