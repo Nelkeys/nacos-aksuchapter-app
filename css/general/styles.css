@@ -238,13 +238,13 @@ form textarea{
 
 
 .overlay {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Adjust the alpha (last parameter) for darkness */
+    z-index: 999;
 }
 
 .loader {
