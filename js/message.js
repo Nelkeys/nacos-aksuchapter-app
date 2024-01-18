@@ -19,6 +19,7 @@ fetch("https://formspree.io/f/xkndgnaj", {
     // Handle the response data as needed
 
     // After processing, you can hide the form or take other actions
+    showLoader();
     hideMessagePopup();
     window.location.reload();
 })
