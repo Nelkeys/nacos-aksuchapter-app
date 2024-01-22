@@ -259,9 +259,6 @@ body.dark-mode header{
     color: var(--white);
     box-shadow: 0 0 3px #111;
 }
-body.dark-mode footer{
-
-}
 
 body.dark-mode footer{
     background: var(--dark-background);
