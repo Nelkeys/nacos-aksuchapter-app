@@ -57,7 +57,7 @@ body.dark-mode .title{
     color: #06a320;
 }
 body.dark-mode .not-content{
-    color: var(--white);
+    color: var(--normalText);
 }
 body.dark-mode .date{
     color: var(--white);
