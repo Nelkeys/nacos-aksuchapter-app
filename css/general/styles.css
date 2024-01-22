@@ -267,3 +267,6 @@ body.dark-mode footer{
     background: var(--dark-background);
     box-shadow: 0 0 3px #111;
 }
+body.dark-mode footer .active{
+    color:  rgb(0, 170, 0);
+}
