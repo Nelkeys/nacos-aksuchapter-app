@@ -31,7 +31,7 @@ header p{
 
 .course-list{
     padding: 2em 1em;
-    margin: 0 0 2em 0;
+    margin: 0 0 3.5em 0;
 }
 
 
@@ -65,4 +65,20 @@ header p{
 .c-code-and-c-title p{
     font-size: 80%;
     color: var(--normalText);
+}
+
+
+
+
+
+/* Dark mode styles*/
+body.dark-mode .illustration p{
+    color: var(--white);
+}
+
+body.dark-mode .c-code-and-c-title h3{
+    color: #06a320;
+}
+body.dark-mode .course{
+    box-shadow: 0 0 4px #aaaaaa70;
 }

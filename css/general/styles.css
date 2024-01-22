@@ -19,6 +19,13 @@
 
     --headingText: #3f3f3f;
     --normalText:#7b7d80;
+
+
+
+
+    /* Dark theme */
+    --dark-background: #222;
+    --d-mode-grey:#adb4bf;
 }
 
 
@@ -108,7 +115,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 0;
+    padding: 0 0 1.5em 0;
     background: #fff;
     box-shadow: 0 0 3px #d6d6d6;
 }
@@ -234,4 +241,29 @@ footer a p{
     font-size: 120%;
     cursor: pointer;
     border-radius: 5px;
+}
+
+
+
+
+#sun{
+    display: none;
+    color: #ffff00;
+}
+/* Dark theme styles */
+body.dark-mode{
+    background: var(--dark-background);
+}
+body.dark-mode header{
+    background: var(--dark-background);
+    color: var(--white);
+    box-shadow: 0 0 3px #111;
+}
+body.dark-mode footer{
+
+}
+
+body.dark-mode footer{
+    background: var(--dark-background);
+    box-shadow: 0 0 3px #111;
 }

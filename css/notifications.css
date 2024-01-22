@@ -50,3 +50,15 @@ header p{
 }
 
 
+
+
+/* Dark mode styles*/
+body.dark-mode .title{
+    color: #06a320;
+}
+body.dark-mode .not-content{
+    color: var(--white);
+}
+body.dark-mode .date{
+    color: var(--white);
+}
