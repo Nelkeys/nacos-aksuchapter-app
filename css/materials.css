@@ -48,8 +48,11 @@ header p{
     background: #aaaaaa1f;
 }
 .course i{
-    color: rgb(0, 170, 0);
-    font-size: 200%;
+    color: var(--white);
+    border-radius: 50%;
+    padding: 5px;
+    background: rgb(0, 170, 0);
+    font-size: 140%;
 }
 .c-code-and-c-title{
     display: flex;
