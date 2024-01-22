@@ -184,6 +184,9 @@ header h2 span{
 body.dark-mode header{
     box-shadow: none;
 }
+body.dark-mode header .bx-message-dots{
+    color: var(--white);
+}
 body.dark-mode .welcome h2 span{
     color: var(--white);
 }
