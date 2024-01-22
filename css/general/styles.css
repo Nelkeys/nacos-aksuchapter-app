@@ -115,7 +115,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 0 0 .7em 0;
+    padding: 0 0 .5em 0;
     background: #fff;
     box-shadow: 0 0 3px #d6d6d6;
 }

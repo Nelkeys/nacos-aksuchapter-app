@@ -77,7 +77,7 @@ body.dark-mode .illustration p{
 }
 
 body.dark-mode .c-code-and-c-title h3{
-    color: #06a320;
+    color: var(--white);
 }
 body.dark-mode .course{
     box-shadow: 0 0 4px #aaaaaa70;
