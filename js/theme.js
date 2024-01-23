@@ -8,9 +8,6 @@ function toggleDarkMode() {
 
     // Save user preference to localStorage
     localStorage.setItem('theme', 'dark');
-
-    // Update meta theme-color for dark mode
-    updateThemeColor('#000');
 }
 
 // Function to toggle light mode
@@ -21,9 +18,6 @@ function toggleLightMode() {
 
     // Save user preference to localStorage
     localStorage.setItem('theme', 'light');
-
-    // Update meta theme-color for light mode
-    updateThemeColor('#fff');
 }
 
 // Function to set the theme based on user preference in localStorage
@@ -36,15 +30,6 @@ function setThemeFromLocalStorage() {
         toggleLightMode();
     }
 }
-
-// Function to update meta theme-color dynamically
-function updateThemeColor(color) {
-    const themeColorMetaTag = document.querySelector('meta[name="theme-color"]');
-    if (themeColorMetaTag) {
-        themeColorMetaTag.content = color;
-    }
-}
-
 
 // Set the theme when the page loads
 document.addEventListener('DOMContentLoaded', setThemeFromLocalStorage);
