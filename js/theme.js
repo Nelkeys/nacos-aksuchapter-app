@@ -8,6 +8,9 @@ function toggleDarkMode() {
 
     // Save user preference to localStorage
     localStorage.setItem('theme', 'dark');
+
+     // Update theme-color meta tag for dark mode
+     updateThemeColor('#333333'); // Dark gray color
 }
 
 // Function to toggle light mode
@@ -18,6 +21,9 @@ function toggleLightMode() {
 
     // Save user preference to localStorage
     localStorage.setItem('theme', 'light');
+
+    // Update theme-color meta tag for light mode
+    updateThemeColor('#ffffff'); // White color
 }
 
 // Function to set the theme based on user preference in localStorage
@@ -28,6 +34,14 @@ function setThemeFromLocalStorage() {
         toggleDarkMode();
     } else {
         toggleLightMode();
+    }
+}
+
+// Function to update theme-color meta tag
+function updateThemeColor(color) {
+    const themeColorMetaTag = document.querySelector('meta[name="theme-color"]');
+    if (themeColorMetaTag) {
+        themeColorMetaTag.setAttribute('content', color);
     }
 }
 
