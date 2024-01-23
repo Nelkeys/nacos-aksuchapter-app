@@ -10,7 +10,7 @@ function toggleDarkMode() {
     localStorage.setItem('theme', 'dark');
 
      // Update theme-color meta tag for dark mode
-     updateThemeColor('#333333'); // Dark gray color
+     updateThemeColor('#222'); // Dark gray color
 }
 
 // Function to toggle light mode
