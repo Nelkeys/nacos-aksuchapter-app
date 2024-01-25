@@ -54,7 +54,7 @@ header p{
 
 /* Dark mode styles*/
 body.dark-mode .title{
-    color: #06a320;
+    color: var(--greenColor);
 }
 body.dark-mode .not-content{
     color: var(--white);
