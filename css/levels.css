@@ -12,7 +12,7 @@ header i{
     font-size: 120%;
     color: var(--headingText);
     position: relative;
-    bottom: 2px;
+    bottom: 1.8px;
 }
 header p{
     font-size: 130%;
