@@ -103,7 +103,7 @@ header{
     box-shadow: none;
 }
 header h2{
-    color: var(--primaryColor);
+    color: var(--headingText);
 }
 header h2 span{
     color: var(--headingText);

@@ -60,7 +60,7 @@ header p{
     color: var(--white);
     border-radius: 50%;
     padding: 8px;
-    background: rgb(0, 170, 0);
+    background: var(--greenColor    );
     font-size: 150%;
 }
 .c-code-and-c-title{

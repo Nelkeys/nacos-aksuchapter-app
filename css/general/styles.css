@@ -1,7 +1,8 @@
 
 :root{
     /*--primaryColor:#0d2296; */
-    --primaryColor:#000080d5;
+    --primaryColor:#1F375D;
+    --greenColor: #009200;
     --white:#F0F4FA;
     --grey:#ADB4BF;
     --notificationBox:#adb4bf36;
@@ -268,5 +269,5 @@ body.dark-mode footer{
     box-shadow: 0 0 3px #111;
 }
 body.dark-mode footer .active{
-    color:  rgb(0, 170, 0);
+    color: var(--greenColor);
 }
