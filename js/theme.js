@@ -4,7 +4,8 @@ function toggleDarkMode() {
     document.getElementById('moon').style.display = 'none';
     document.getElementById('sun').style.display = 'inline-block';
 
-    document.querySelector("meta[name='theme-color']").content = "#222";
+    // Update theme-color meta tag
+    updateThemeColor("#222");
 
     // Save user preference to localStorage
     localStorage.setItem('theme', 'dark');
@@ -16,10 +17,19 @@ function toggleLightMode() {
     document.getElementById('moon').style.display = 'inline-block';
     document.getElementById('sun').style.display = 'none';
 
-    document.querySelector("meta[name='theme-color']").content = "#fff";
+    // Update theme-color meta tag
+    updateThemeColor("#FFF");
 
     // Save user preference to localStorage
     localStorage.setItem('theme', 'light');
+}
+
+// Function to update theme-color meta tag
+function updateThemeColor(color) {
+    const themeColorMeta = document.head.querySelector("meta[name='theme-color']");
+    if (themeColorMeta) {
+        themeColorMeta.content = color;
+    }
 }
 
 // Function to set the theme based on user preference in localStorage
