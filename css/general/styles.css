@@ -1,6 +1,7 @@
 
 :root{
-    --primaryColor:#0d2296;
+    /*--primaryColor:#0d2296; */
+    --primaryColor:#000080d5;
     --white:#F0F4FA;
     --grey:#ADB4BF;
     --notificationBox:#adb4bf36;
