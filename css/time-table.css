@@ -1,0 +1,94 @@
+@import url(/css/general/styles.css) all;
+
+header{
+    border-bottom-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+    display: flex;
+    align-items: end;
+    gap: 2em;
+}
+header i{
+    font-size: 120%;
+    color: var(--headingText);
+    position: relative;
+    bottom: 1.8px;
+}
+header p{
+    font-size: 130%;
+}
+
+.illustration{
+    padding: 2em 1.5em 0 1.5em;
+    margin-top: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--headingText);
+}
+.illustration p{
+    font-size: 110%;
+    font-weight: 500;
+    color: var(--headingText);
+}
+.illustration img{
+    width: 13em;
+    height: 10em;
+}
+
+
+
+.levels{
+    padding: 2em 1em;
+    margin: 1.5em 0 3.5em 0;
+}
+
+.set{
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    box-shadow: 0 2px 7px #aaaaaa70;
+    padding: 1.5em 2em;
+    border-radius: .5em;
+    margin-bottom: 1em;
+}
+.set:active{
+    background: #aaaaaa1f;
+}
+.set i{
+    color: var(--white);
+    border-radius: 50%;
+    padding: 8px;
+    background: rgb(0, 170, 0);
+    font-size: 150%;
+}
+.set h3{
+    font-weight: 500;
+    font-size: 90%;
+    color: var(--primaryColor);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dark mode styles*/
+body.dark-mode header i{
+    color: var(--white);
+}
+body.dark-mode .illustration p{
+    color: var(--white);
+}
+body.dark-mode .set h3{
+    color: var(--white);
+}
+body.dark-mode .set{
+    box-shadow: 0 0 4px #aaaaaa70;
+}
