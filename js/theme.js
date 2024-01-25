@@ -29,6 +29,7 @@ function setThemeFromLocalStorage() {
     }
 }
 
+
 // Set the theme when the page loads
 document.addEventListener('DOMContentLoaded', setThemeFromLocalStorage);
 
