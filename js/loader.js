@@ -1,15 +1,12 @@
-var stopLoader = false;
+var hideLoaderTimeout;
 
 document.addEventListener('DOMContentLoaded', function () {
     // Trigger the loader when the page initially loads
     showLoader();
 
     // Add a small delay before hiding the loader (adjust the time as needed)
-    setTimeout(function () {
-        // Check if the loader should be stopped
-        if (!stopLoader) {
-            hideLoader();
-        }
+    hideLoaderTimeout = setTimeout(function () {
+        hideLoader();
     }, 0); // Adjust the time as needed
 });
 
@@ -21,13 +18,15 @@ function showLoader() {
 function hideLoader() {
     document.getElementById('loader').style.display = 'none';
     document.getElementById('overlay').style.display = 'none';
+    // Clear the timeout to stop hiding the loader
+    clearTimeout(hideLoaderTimeout);
 }
 
 function reloadHomePage() {
-    // Set the stopLoader variable to true before reloading
-    stopLoader = true;
-
     showLoader();
+    
+    // Clear the timeout before reloading
+    clearTimeout(hideLoaderTimeout);
 
     location.reload();
 }
