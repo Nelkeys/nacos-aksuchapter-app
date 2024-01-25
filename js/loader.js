@@ -24,9 +24,23 @@ function hideLoader() {
 
 function reloadHomePage() {
     showLoader();
-    
+
     // Clear the timeout before reloading
     clearTimeout(hideLoaderTimeout);
 
     location.reload();
 }
+
+// Listen for the pageshow event to reset the loader when the page is shown again
+window.addEventListener('pageshow', function (event) {
+    // Check if the page is being loaded from the bfcache (back/forward cache)
+    if (event.persisted) {
+        // Reset the loader
+        showLoader();
+
+        // Add a small delay before hiding the loader (adjust the time as needed)
+        hideLoaderTimeout = setTimeout(function () {
+            hideLoader();
+        }, 0); // Adjust the time as needed
+    }
+});
