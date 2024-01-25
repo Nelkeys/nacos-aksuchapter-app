@@ -129,7 +129,6 @@ footer a{
     flex-direction: column;
     line-height: 2em;
     text-decoration: none;
-    width: 100%;
     color: var(--grey);
     transition: .5s ease-in-out;
 }
