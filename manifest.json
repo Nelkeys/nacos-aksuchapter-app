@@ -1,12 +1,12 @@
 {
-    "name": "AK22 Class App",
-    "short_name": "AK22 Class",
+    "name": "NACOS",
+    "short_name": "NACOS",
     "description": "A NACOS app for managing and recieving information",
     "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",
-    "version": "1.0.0",
+    "version": "1.0.1",
 
     "icons": [
       {
