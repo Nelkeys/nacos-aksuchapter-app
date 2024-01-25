@@ -1,10 +1,15 @@
+var stopLoader = false;
+
 document.addEventListener('DOMContentLoaded', function () {
     // Trigger the loader when the page initially loads
     showLoader();
 
     // Add a small delay before hiding the loader (adjust the time as needed)
     setTimeout(function () {
-        hideLoader();
+        // Check if the loader should be stopped
+        if (!stopLoader) {
+            hideLoader();
+        }
     }, 0); // Adjust the time as needed
 });
 
@@ -18,9 +23,10 @@ function hideLoader() {
     document.getElementById('overlay').style.display = 'none';
 }
 
-
-
 function reloadHomePage() {
+    // Set the stopLoader variable to true before reloading
+    stopLoader = true;
+
     showLoader();
 
     location.reload();
