@@ -1,8 +1,8 @@
 // Function to toggle dark mode
 function toggleDarkMode() {
+    document.body.classList.add('dark-mode');
     // Change theme color in <meta> tag
     document.querySelector('.theme-color-stuff').setAttribute('content', '#222');
-    document.body.classList.add('dark-mode');
     document.getElementById('moon').style.display = 'none';
     document.getElementById('sun').style.display = 'inline-block';
 
