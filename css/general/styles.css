@@ -119,7 +119,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: .2em 1em .5em 1em;
+    padding: .2em .5em .5em .5em;
     background: #fff;
     box-shadow: 0 0 3px #d6d6d6;
 }
