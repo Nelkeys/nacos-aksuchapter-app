@@ -6,6 +6,9 @@ function toggleDarkMode() {
 
     // Save user preference to localStorage
     localStorage.setItem('theme', 'dark');
+
+    // Change theme color in <meta> tag
+    document.querySelector('.theme-color-stuff').setAttribute('content', '#222');
 }
 
 // Function to toggle light mode
@@ -16,6 +19,10 @@ function toggleLightMode() {
 
     // Save user preference to localStorage
     localStorage.setItem('theme', 'light');
+
+    // Change theme color in <meta> tag
+    document.querySelector('.theme-color-stuff').setAttribute('content', '#fff');
+
 }
 
 // Function to set the theme based on user preference in localStorage
