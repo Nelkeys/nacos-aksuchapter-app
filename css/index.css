@@ -194,8 +194,8 @@ body.dark-mode .welcome h2 span{
     color: var(--white);
 }
 body.dark-mode .link-container a{
-    box-shadow: 0 0 5px #aaaaaa70;
-    background: #8f8f8f2f;
+    box-shadow: 0 0 5px #aaaaaa4b;
+    background: #8f8f8f1c;
 }
 body.dark-mode .icons{
     box-shadow: 0 0 2px var(--d-mode-grey);
