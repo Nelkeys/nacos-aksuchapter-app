@@ -5,6 +5,10 @@ header{
     border-bottom-left-radius: 1.5em;
     border-bottom-right-radius: 1.5em;
 }
+header a{
+    font-size: 120%;
+    color: var(--headingText);
+}
 header p{
     font-size: 130%;
 }
