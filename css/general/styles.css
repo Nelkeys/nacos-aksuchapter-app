@@ -90,6 +90,7 @@ body{
 
 /* Hide the scrollbar for webkit (Chrome, Safari, Edge) */
 body::-webkit-scrollbar {
+    display: none;
     width: 0.5em; 
 }
 
