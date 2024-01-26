@@ -72,7 +72,6 @@ body{
     background: #fff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 14px;
-    overflow: hidden; 
 
 
 
@@ -81,20 +80,15 @@ body{
     -moz-user-select: none; /* Disable text selection for Mozilla Firefox */
     -ms-user-select: none; /* Disable text selection for Microsoft browsers */
     user-select: none; /* Disable text selection for other browsers */
-
-
-    /*hiding scrollbar*/
-    scrollbar-width: thin; /* Firefox */
-    scrollbar-color: transparent transparent; /* Firefox */
-    overflow: auto;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
 }
 
 /* Hide the scrollbar for webkit (Chrome, Safari, Edge) */
 body::-webkit-scrollbar {
     display: none;
     width: 0.5em; 
+}
+::-webkit-scrollbar{
+    display: none;
 }
 
 body::-webkit-scrollbar-thumb {
