@@ -85,7 +85,9 @@ body{
     /*hiding scrollbar*/
     scrollbar-width: thin; /* Firefox */
     scrollbar-color: transparent transparent; /* Firefox */
-    overflow: -moz-scrollbars-none; /* Firefox */
+    overflow: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 /* Hide the scrollbar for webkit (Chrome, Safari, Edge) */
