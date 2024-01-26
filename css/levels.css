@@ -1,9 +1,5 @@
 @import url(/css/general/styles.css) all;
 
-::-webkit-scrollbar {
-    display: none;
-    width: 0;
-}
 
 header{
     border-bottom-left-radius: 1.5em;
