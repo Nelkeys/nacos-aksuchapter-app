@@ -82,15 +82,14 @@ body{
     user-select: none; /* Disable text selection for other browsers */
 }
 
-/* Hide the scrollbar for webkit (Chrome, Safari, Edge) */
-/* Hide the scrollbar for webkit (Chrome, Safari, Edge) */
-
+/* Hide the scrollbar for webkit (Chrome, Safari) */
 body {
     scrollbar-width: thin; /* Firefox */
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS devices */
 }
 
 body::-webkit-scrollbar {
-    width: 10em; 
+    width: 0.5em; 
 }
 
 body::-webkit-scrollbar-thumb {
@@ -100,6 +99,7 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-track {
     background-color: transparent; 
 }
+
 
 header{
     display: flex;
