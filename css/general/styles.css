@@ -84,6 +84,7 @@ body{
 
 /* Hide the scrollbar for webkit (Chrome, Safari, Edge) */
 /* Hide the scrollbar for webkit (Chrome, Safari, Edge) */
+
 body {
     scrollbar-width: thin; /* Firefox */
 }
