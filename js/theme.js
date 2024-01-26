@@ -37,3 +37,9 @@ function setThemeFromLocalStorage() {
 // Set the theme when the page loads
 document.addEventListener('DOMContentLoaded', setThemeFromLocalStorage);
 
+document.addEventListener('DOMContentLoaded', function () {
+    // Allow some time for the page to render before hiding the scrollbar
+    setTimeout(function () {
+        document.body.style.overflow = 'auto'; // Show the scrollbar
+    }, 0); // Adjust the delay as needed
+});
