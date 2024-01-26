@@ -89,7 +89,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 0.5em; 
+    width: 10em; 
 }
 
 body::-webkit-scrollbar-thumb {
