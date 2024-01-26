@@ -80,6 +80,21 @@ body{
     -moz-user-select: none; /* Disable text selection for Mozilla Firefox */
     -ms-user-select: none; /* Disable text selection for Microsoft browsers */
     user-select: none; /* Disable text selection for other browsers */
+
+
+
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: transparent transparent; /* Firefox */
+    overflow: -moz-scrollbars-none; /* Firefox */
+}
+
+/* Hide the scrollbar for webkit (Chrome, Safari, Edge) */
+body::-webkit-scrollbar {
+    width: 0; 
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: transparent;
 }
 
 header{
