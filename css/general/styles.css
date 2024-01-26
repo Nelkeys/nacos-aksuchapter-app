@@ -85,7 +85,7 @@ body{
 /* Hide the scrollbar for webkit (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
     display: none;
-    overflow: hidden; 
+    width: 0;
 }
 
 header{
