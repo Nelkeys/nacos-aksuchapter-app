@@ -1,11 +1,11 @@
 {
-    "name": "NACOS",
-    "short_name": "NACOS",
+    "name": "NACOS AKSU CHAPTER",
+    "short_name": "NACOS AKSU",
     "description": "A NACOS app for managing and recieving information",
     "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#ffffff",
-    "version": "1.0.1",
+    "version": "1.0.2",
 
     "icons": [
       {
