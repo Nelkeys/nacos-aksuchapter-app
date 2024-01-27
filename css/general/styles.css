@@ -90,7 +90,8 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 0.5em; 
+    width: 0; 
+    background: transparent; 
 }
 
 body::-webkit-scrollbar-thumb {
