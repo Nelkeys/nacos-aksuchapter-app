@@ -83,27 +83,12 @@ body{
     user-select: none; /* Disable text selection for other browsers */
 }
 
-/* Hide the scrollbar for webkit (Chrome, Safari) */
-body {
-    scrollbar-width: 0; /* Firefox */
-    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS devices */
+/*cleanest solution*/
+::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
-
-body::-webkit-scrollbar {
-    display: none;
-}
-.scrollbar-hidden::-webkit-scrollbar {
-    display: none;
-}
-body::-webkit-scrollbar-thumb {
-    display: none;
-}
-
-body::-webkit-scrollbar-track {
-    display: none;
-}
-
-
 header{
     display: flex;
     align-items: center;
