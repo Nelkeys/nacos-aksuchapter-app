@@ -90,8 +90,8 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 0; 
-    background: transparent; 
+    width: 0 !important; 
+    background: transparent !important; 
 }
 
 body::-webkit-scrollbar-thumb {
