@@ -85,21 +85,20 @@ body{
 
 /* Hide the scrollbar for webkit (Chrome, Safari) */
 body {
-    scrollbar-width: thin; /* Firefox */
+    scrollbar-width: 0; /* Firefox */
     -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS devices */
 }
 
 body::-webkit-scrollbar {
-    width: 0 !important; 
-    background: transparent !important; 
+    display: none;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: transparent;
+    display: none;
 }
 
 body::-webkit-scrollbar-track {
-    background-color: transparent; 
+    display: none;
 }
 
 
