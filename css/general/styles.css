@@ -26,7 +26,8 @@
 
 
     /* Dark theme */
-    --dark-background: #121212;
+    --dark-background:   #01020A;
+    --dark-mode-header:  #1E1E1E;
     --d-mode-grey:#adb4bf;
 }
 
@@ -113,7 +114,7 @@ header{
     padding: 1em 1.5em;
     color: var(--headingText);
     background: #fff;
-    box-shadow: 0 0 3px #d6d6d6;
+    box-shadow: 0 3px 3px 3px #d6d6d6;
     -webkit-tap-highlight-color: transparent;
     cursor: pointer;
 }
