@@ -281,12 +281,12 @@ body.dark-mode{
 body.dark-mode header{
     background: var(--dark-background);
     color: var(--white);
-    box-shadow: 0 0 3px #303030;
+    box-shadow: 0 0 3px #616161e5;
 }
 
 body.dark-mode footer{
     background: var(--dark-background);
-    box-shadow: 0 0 3px #303030;
+    box-shadow: 0 0 3px #616161e5;
 }
 body.dark-mode footer .active{
     color: var(--greenColor);
