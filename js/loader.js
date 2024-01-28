@@ -44,3 +44,15 @@ window.addEventListener('pageshow', function (event) {
         }, 0); // Adjust the time as needed
     }
 });
+
+
+
+
+document.addEventListener('contextmenu', function(event) {
+  // Check if the clicked element is a link
+  if (event.target.tagName === 'A') {
+    // Prevent the default context menu for links
+    event.preventDefault();
+    // Add your custom logic or leave it empty to disable the context menu
+  }
+});
