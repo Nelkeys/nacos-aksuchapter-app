@@ -49,10 +49,12 @@ window.addEventListener('pageshow', function (event) {
 
 
 document.addEventListener('contextmenu', function(event) {
-  // Check if the clicked element is a link
-  if (event.target.tagName === 'A') {
+  // Check if the clicked element or its parent is a link
+  const isLink = event.target.tagName === 'A' || event.target.parentElement.tagName === 'A';
+
+  if (isLink) {
     // Prevent the default context menu for links
     event.preventDefault();
-    // Add your custom logic or leave it empty to disable the context menu
+    // Optionally, add your custom logic or leave it empty to disable the context menu
   }
 });
