@@ -39,7 +39,8 @@ document.addEventListener('DOMContentLoaded', setThemeFromLocalStorage);
 
 
 
-
+/*
 document.addEventListener('gesturestart', function (e) {
     e.preventDefault();
 })
+*/
