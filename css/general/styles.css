@@ -184,12 +184,12 @@ footer a p{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #00000027;/* Adjust the alpha (last parameter) for darkness */
+    background: #000000c4;/* Adjust the alpha (last parameter) for darkness */
     z-index: 999;
 }
 
 .loader {
-    border: 1.5px solid var(--greenColor);
+    border: 1.5px solid var(--white);
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -202,7 +202,7 @@ footer a p{
     margin-left: -25px;
     z-index: 1000;
     background: transparent;
-    box-shadow: 0 0 10px var(--greenColor);
+    box-shadow: 0 0 20px var(--white);
 }
 
 @keyframes spin {
@@ -214,10 +214,11 @@ footer a p{
     50% { transform: scale(1); }
 }
 
+/*
 body.dark-mode .loader{
     border: 1.5px solid var(--white);
     box-shadow: 0 0 20px var(--white);
-}
+} */
 
    
 
