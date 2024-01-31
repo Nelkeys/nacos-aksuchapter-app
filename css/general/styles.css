@@ -74,6 +74,10 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 14px;
 
+    touch-action: pan-x pan-y !important;
+    -webkit-user-drag: none;
+    overscroll-behavior: none;
+
 
 
 

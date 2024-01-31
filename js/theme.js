@@ -37,3 +37,9 @@ function setThemeFromLocalStorage() {
 // Set the theme when the page loads
 document.addEventListener('DOMContentLoaded', setThemeFromLocalStorage);
 
+
+
+
+document.addEventListener('gesturestart', function (e) {
+    e.preventDefault();
+})
