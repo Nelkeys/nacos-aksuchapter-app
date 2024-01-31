@@ -75,7 +75,9 @@ body{
     font-size: 14px;
 
     touch-action: pan-x pan-y !important;
-    -webkit-user-drag: none;
+   /* -webkit-user-drag: none;
+    overscroll-behavior: none;
+    */
 
 
 
