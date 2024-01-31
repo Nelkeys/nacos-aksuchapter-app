@@ -25,7 +25,7 @@
     padding: 1em;
     margin: 1em;
     position: fixed;
-    top: 20%;
+    top: 25%;
     left: 0;
     right: 0;
     border-radius: 1em;
@@ -107,7 +107,7 @@ form textarea{
     padding: 1em;
     margin: 1em;
     position: fixed;
-    top: 20%;
+    top: 25%;
     left: 0;
     right: 0;
     border-radius: 1em;
@@ -283,9 +283,11 @@ body.dark-mode .link-container p{
 body.dark-mode .aboutPopup{
     background: var(--dark-mode-header);
     color: var(--white);
+    box-shadow: 0 0 3px var(--grey);
 }
 body.dark-mode .feedbackPopup{
     background: var(--dark-mode-header);
+    box-shadow: 0 0 3px var(--grey);
 }
 body.dark-mode .button-and-cancel button{
     background: var(--white);
