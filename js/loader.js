@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Add a small delay before hiding the loader (adjust the time as needed)
     hideLoaderTimeout = setTimeout(function () {
         hideLoader();
-    }, 3000); // Adjust the time as needed
+    },0); // Adjust the time as needed
 });
 
 function showLoader() {
