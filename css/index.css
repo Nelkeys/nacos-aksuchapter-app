@@ -12,7 +12,7 @@
     position: fixed;
     display: none;
     justify-content: center;
-    background: #ffffffbb;
+    backdrop-filter: blur(3px);
     z-index: 700;
 }
 .feedbackPopup{
@@ -78,9 +78,83 @@ form textarea{
     border: 2px solid red;
     cursor: pointer;
 }
-.button-and-cancel i:active{
-    background: var(--grey);
+
+
+
+
+
+
+
+
+.about-popup-container{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none; 
+    justify-content: center;
+    backdrop-filter: blur(3px);
+    z-index: 700;   
 }
+.aboutPopup{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    box-shadow: 0 0 7px var(--grey);
+    background: #fff;
+    padding: 1em;
+    margin: 1em;
+    position: fixed;
+    top: 20%;
+    left: 0;
+    right: 0;
+    border-radius: 1em;
+}
+.aboutPopup img{
+    width: 6em;
+    margin-top: 2em;
+    background: var(--white);
+    border-radius: 50%;
+}
+.bxl-facebook-circle{
+    color:  #316FF6;
+    cursor: pointer;
+}
+.bxl-twitter{
+    color: #1DA1F2;
+    cursor: pointer;
+}
+
+
+.copyright{
+    margin-top: 2em;
+}
+.aboutPopup .bx-x{
+    color: red;
+    font-size: 150%;
+    padding: .1em;
+    border-radius: 50%;
+    border: 2px solid red;
+    cursor: pointer;
+    margin-top: .5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -129,7 +203,10 @@ header h2 span{
 .bx-message-dots{
     color: var(--primaryColor);
 }
-.bx-refresh{
+.bxs-moon{
+    color: var(--dark-background);
+}
+.bx-info-circle{
     color: red;
 }
 
@@ -180,7 +257,7 @@ header h2 span{
 
 
 
-
+/* DARK MODE SETTINGS*/
 body.dark-mode header{
     box-shadow: none;
 }
@@ -203,6 +280,22 @@ body.dark-mode .icons{
 body.dark-mode .link-container p{
     color: var(--white);
 }
+body.dark-mode .aboutPopup{
+    background: var(--dark-mode-header);
+    color: var(--white);
+}
+body.dark-mode .feedbackPopup{
+    background: var(--dark-mode-header);
+}
+body.dark-mode .button-and-cancel button{
+    background: var(--white);
+    color: var(--dark-background);
+}
+body.dark-mode form textarea{
+    color: var(--white);
+}
+
+
 
 
 

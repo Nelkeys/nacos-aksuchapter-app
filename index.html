@@ -12,6 +12,16 @@
     <script src="js/loader.js"></script>
     <script src="js/install_prompt.js"></script>
     <title>Home</title>
+
+
+    <script>
+        function showAboutContaner() {
+            document.getElementById("about-popup-container").style.display ="block";
+        }
+        function hideAboutPopup() {
+            document.getElementById("about-popup-container").style.display = "none";
+        }
+    </script>
 </head>
 <body>
 
@@ -34,6 +44,31 @@
 
    
 
+    <div class="about-popup-container" id="about-popup-container">
+        <div class="aboutPopup">
+            <p><b>NACOS AKSU</b></p>
+            <p>Version 1.0.0</p>
+
+            <img src="assets/logo/logo.png" alt="nacos-logo">
+
+            <p class="copyright">&copy; NACOS AKSU Chapter.</p>
+
+            <div class="icons">
+                <i class="bx bxl-facebook-circle"></i>
+                <i class='bx bxl-twitter' ></i>
+            </div>
+
+            <i class='bx bx-x' onclick="hideAboutPopup()"></i>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
     <header>
         <div class="welcome">
             <h2>Wel<span>come</span></h2>
@@ -48,7 +83,7 @@
                 <i class='bx bx-sun' id="sun" onclick="toggleLightMode()"></i>
             </div>
 
-            <i class='bx bx-refresh'  onclick="reloadHomePage()"></i>
+            <i class='bx bx-info-circle' onclick="showAboutContaner()"></i>
         </div>
     </header>
 
