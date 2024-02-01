@@ -104,13 +104,16 @@ form textarea{
     gap: 1em;
     box-shadow: 0 0 7px var(--grey);
     background: #fff;
-    padding: 1em;
+    padding: 2em 1em;
     margin: 1em;
     position: fixed;
     top: 25%;
     left: 0;
     right: 0;
     border-radius: 1em;
+}
+.aboutPopup .version{
+    color: var(--normalText);
 }
 .aboutPopup img{
     width: 6em;
@@ -130,6 +133,7 @@ form textarea{
 
 .copyright{
     margin-top: 2em;
+    font-size: 85%;
 }
 .aboutPopup .bx-x{
     color: red;
