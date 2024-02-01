@@ -1,4 +1,4 @@
- # AK22 Class App
+ # NACOS AKSU App
 
 This is a web application built for students of the AK22 class. It provides a platform for students to access important information and manage their academic activities.
 
@@ -12,7 +12,7 @@ This is a web application built for students of the AK22 class. It provides a pl
 
 ## Technologies Used
 
-The AK22 Class App is built using the following technologies:
+The NACOS AKSU Class App is built using the following technologies:
 
 - HTML
 - CSS
@@ -22,7 +22,7 @@ The AK22 Class App is built using the following technologies:
 
 ## Getting Started
 
-To get started with the AK22 Class App, follow these steps:
+To get started with the NACOS AKSU App, follow these steps:
 
 1. Clone the repository to your local machine.
 2. Open the `index.html` file in a web browser.
@@ -30,7 +30,7 @@ To get started with the AK22 Class App, follow these steps:
 
 ## Code Structure
 
-The code for the AK22 Class App is organized into the following files:
+The code for the NACOS AKSU App is organized into the following files:
 
 - `index.html`: This is the main HTML file that loads the app.
 - `css/index.css`: This file contains the CSS styles for the app.
