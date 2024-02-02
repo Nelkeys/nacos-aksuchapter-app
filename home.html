@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="" class="theme-color-stuff">
+    <link rel="icon" type="image/png" href="/assets/logo/logo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="/js/service-worker.js"></script>
+    <link rel="manifest" href="/manifest.json">
+    <script src="js/loader.js"></script>
+    <script src="js/install_prompt.js"></script>
+    <title>Home</title>
+
+
+    <script>
+        function showAboutContaner() {
+            document.getElementById("about-popup-container").style.display ="flex";
+        }
+        function hideAboutPopup() {
+            document.getElementById("about-popup-container").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="loader" id="loader"></div>
+    
+
+    <div class="popup-container">
+        <div class="feedbackPopup">
+            <p><b>SEND YOUR FEEDBACK &#x1F604;</b></p>
+            <form id="feedbackForm" action="https://formspree.io/f/xkndgnaj" method="POST" onsubmit="submitForm()">
+                <textarea name="message" id="feedbackMessage" required></textarea>
+                <div class="button-and-cancel">
+                    <button type="submit">Send</button>
+                    <i class='bx bx-x' onclick="hideMessagePopup()"></i>
+                </div>
+            </form>
+        </div>
+    </div>
+
+   
+
+    <div class="about-popup-container" id="about-popup-container">
+        <div class="aboutPopup">
+            <p><b>NACOS AKSU</b></p>
+            <p class="version">Version 1.0.0</p>
+
+            <img src="assets/logo/logo.png" alt="nacos-logo">
+
+            <p class="copyright">&copy; NACOS AKSU Chapter.</p>
+
+            <div class="icons">
+                <i class="bx bxl-facebook-circle"></i>
+                <i class='bx bxl-twitter' ></i>
+            </div>
+
+            <i class='bx bx-x' onclick="hideAboutPopup()"></i>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <header>
+        <div class="welcome">
+            <h2>Wel<span>come</span></h2>
+            <p>A <span><b>NACOS</b></span> platform for managing and getting information...</p>
+        </div>
+
+        <div class="icons">
+            <i class='bx bx-message-dots' onclick="showMessagePopup()"></i>
+
+            <div class="theme-icons">
+                <i class='bx bx-moon' id="moon" onclick="toggleDarkMode()"></i>
+                <i class='bx bx-sun' id="sun" onclick="toggleLightMode()"></i>
+            </div>
+
+            <i class='bx bx-info-circle' onclick="showAboutContaner()"></i>
+        </div>
+    </header>
+
+
+
+
+
+    <section class="link-container">
+        <a href="class-timetable.html" class="link purple" onclick="showLoader()">
+            <p><b>Class Timetable</b></p>
+
+            <img src="assets/illustrations/time-table.svg" alt="">
+        </a>
+
+        <a href="https://drive.google.com/folderview?id=1uS-uKfccAICVu85wI6_ROpFUQYmVrG5G" class="link blue">
+            <img src="assets/illustrations/result.svg" alt="">
+
+            <p><b>Results</b></p>
+        </a>
+
+        <a href="empty_files/no-data.html" class="link green" onclick="showLoader()">
+            <p><b>Exam Timetable</b></p>
+
+            <img src="assets/illustrations/exam.svg" alt="">
+        </a>
+    </section>
+
+
+
+
+
+
+    <footer>
+        <a href="home.html" class="active" onclick="showLoader()">
+            <i class='bx bx-home-alt-2'></i>
+            <p>Home</p>
+        </a>
+
+        <a href="materials-levels.html" onclick="showLoader()" class="page-link">
+            <i class='bx bx-book-content' ></i>
+            <p>Materials</p>
+        </a>
+
+        <a href="past-questions.html" onclick="showLoader()" class="page-link">
+            <i class='bx bx-history'></i>
+            <p>Questions</p>
+        </a>
+
+        <a href="notifications.html" onclick="showLoader()" class="page-link">
+            <i class='bx bx-bell' ></i>
+            <p>Notifications</p>
+        </a>
+    </footer>
+
+
+     <!-- PWA Install Banner -->
+     <div id="pwa-install-banner">
+        <p>Install our app for a better experience!</p>
+        <button id="install-button">Install</button>
+    </div>
+
+
+
+
+
+
+    <script src="js/theme.js"></script>
+    <script src="js/message.js"></script>
+</body>
+</html>
