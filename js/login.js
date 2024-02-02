@@ -1,6 +1,7 @@
+
 // Import the necessary functions from the Firebase SDK
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+import { getAuth,  onAuthStateChanged, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -13,11 +14,34 @@ const firebaseConfig = {
     measurementId: "G-6FMGFNSZW7"
 };
 
+
+
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
 // Get the Auth instance
 const auth = getAuth(app);
+
+// Check if the user is authenticated on page load
+onAuthStateChanged(auth, (user) => {
+    // Check if the user is on the login or home page
+    const isLoginPage = window.location.pathname.includes("index.html");
+    const isHomePage = window.location.pathname.includes("home.html");
+
+    if (user) {
+        // User is signed in
+        if (isLoginPage) {
+            // Redirect to home page only if not already on home page
+            window.location.href = "../home.html";
+        }
+    } else {
+        // User is not signed in
+        if (isHomePage) {
+            // Redirect to login page only if not already on login page
+            window.location.href = "../index.html";
+        }
+    }
+});
 
 // Function to handle login
 async function loginUser(email, password) {
@@ -31,8 +55,15 @@ async function loginUser(email, password) {
     } catch (error) {
         console.error("Login error:", error.message);
         // Handle login errors, e.g., display an error message to the user
+
+        document.getElementById("wrongLogin").style.display = "block";
+
+        setTimeout(() => {
+            document.getElementById("wrongLogin").style.display = "none";
+        }, 3000);
     }
 }
+
 
 // Event listener for the login form
 document.getElementById("login").addEventListener("click", function (event) {
@@ -45,17 +76,3 @@ document.getElementById("login").addEventListener("click", function (event) {
     // Call the loginUser function with the provided email and password
     loginUser(email, password);
 });
-
-
-
-function checkAuthentication() {
-    const user = auth.currentUser;
-    console.log('User:', user);
-    console.log('Current Page:', window.location.pathname);
-
-    if (!user && window.location.pathname !== '/index.html') {
-        window.location.href = 'index.html';
-    }
-}
-
-document.addEventListener('DOMContentLoaded', checkAuthentication);

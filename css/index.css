@@ -16,6 +16,10 @@ body{
 .logo img{
     width: 5em;
 }
+.logo h2{
+    margin-top: 1em;
+    color: var(--dark-background);
+}
 
 
 form{
@@ -31,14 +35,20 @@ form input{
     border-radius: 5px;
     border: none;
     outline: none;
-    background: var(--d-mode-grey);
-    color: var(--greenColor);
+    background:#c6e2e2;
+    color: var(--dark-background);
 }
 #login{
     background: var(--greenColor);
     color: var(--white);
     letter-spacing: 2px;
 }
+form p{
+    color: red;
+    text-align: start;
+    display: none;
+}
+
 
 
 .info{
@@ -46,3 +56,4 @@ form input{
     text-align: center;
     color: var(--headingText);
 }
+
