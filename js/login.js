@@ -45,3 +45,17 @@ document.getElementById("login").addEventListener("click", function (event) {
     // Call the loginUser function with the provided email and password
     loginUser(email, password);
 });
+
+
+
+function checkAuthentication() {
+    const user = auth.currentUser;
+    console.log('User:', user);
+    console.log('Current Page:', window.location.pathname);
+
+    if (!user && window.location.pathname !== '/index.html') {
+        window.location.href = 'index.html';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', checkAuthentication);
