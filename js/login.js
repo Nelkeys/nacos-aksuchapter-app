@@ -31,8 +31,7 @@ onAuthStateChanged(auth, (user) => {
     if (user) {
         // User is signed in
         if (isLoginPage) {
-            // Redirect to home page only if not already on home page
-            window.location.href = "../home.html";
+            
         }
     } else {
         // User is not signed in
