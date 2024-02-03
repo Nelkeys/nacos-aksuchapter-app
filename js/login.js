@@ -15,32 +15,37 @@ const firebaseConfig = {
 };
 
 
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
 // Get the Auth instance
 const auth = getAuth(app);
 
-// Check if the user is authenticated on page load
-onAuthStateChanged(auth, (user) => {
-    // Check if the user is on the login or home page
-    const isLoginPage = window.location.pathname.includes("index.html");
-    const isHomePage = window.location.pathname.includes("home.html");
+// Function to check authentication on page load
+function checkAuth() {
+    onAuthStateChanged(auth, (user) => {
+        if (user) {
+            // User is signed in
+            console.log("User is authenticated.");
+            if (!window.location.href.includes("/index.html")) {
+                // Redirect to home page only if not already on the login page
+                window.location.href;
+            }
+        } else {
+            // User is signed out
+            if (!window.location.href.includes("/index.html")) {
+                // Redirect to login page only if not already on the login page
+                window.location.href = "/index.html";
+            }
+            console.log("User is not authenticated.");
+        }
+    });
+}
 
-    if (user) {
-        // User is signed in
-        if (isLoginPage) {
-            
-        }
-    } else {
-        // User is not signed in
-        if (isHomePage) {
-            // Redirect to login page only if not already on login page
-            window.location.href = "../index.html";
-        }
-    }
-});
+// Call checkAuth to ensure the user is authenticated on page load
+console.log("Checking authentication on page load.");
+checkAuth();
+
 
 // Function to handle login
 async function loginUser(email, password) {
@@ -50,11 +55,13 @@ async function loginUser(email, password) {
         console.log("User logged in:", user);
         // You can redirect to another page or perform other actions after successful login
 
+        console.log("Redirecting to home page.");
         window.location.href = "../home.html";
     } catch (error) {
         console.error("Login error:", error.message);
         // Handle login errors, e.g., display an error message to the user
 
+        console.log("Displaying login error message.");
         document.getElementById("wrongLogin").style.display = "block";
 
         setTimeout(() => {
@@ -63,6 +70,9 @@ async function loginUser(email, password) {
     }
 }
 
+// Call checkAuth to ensure the user is authenticated on page load
+console.log("Checking authentication on page load.");
+checkAuth();
 
 // Event listener for the login form
 document.getElementById("login").addEventListener("click", function (event) {
@@ -73,5 +83,6 @@ document.getElementById("login").addEventListener("click", function (event) {
     const password = document.getElementById("password").value;
 
     // Call the loginUser function with the provided email and password
+    console.log("Attempting to log in with:", email);
     loginUser(email, password);
 });
