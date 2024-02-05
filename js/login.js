@@ -16,6 +16,16 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
+// Function to check if the user is already authenticated
+function checkAuthentication() {
+    onAuthStateChanged(auth, (user) => {
+        if (!user) {
+            // User is authenticated, redirect to the home page or dashboard
+            window.location.href = "/index.html";
+        }
+    });
+}
+
 // Function to handle login
 async function loginUser(email, password) {
     try {
@@ -23,6 +33,11 @@ async function loginUser(email, password) {
         const user = userCredential.user;
         console.log("User logged in:", user);
 
+        // Set session data on the client side (using sessionStorage)
+        sessionStorage.setItem('user_id', user.uid);
+        sessionStorage.setItem('email', user.email);
+
+        // Redirect to the home page or dashboard
         window.location.href = "/home.html";
     } catch (error) {
         console.error("Login error:", error.message);
@@ -38,7 +53,7 @@ async function loginUser(email, password) {
 
 // Event listener for the login form
 document.getElementById("login").addEventListener("click", function (event) {
-    event.preventDefault(); 
+    event.preventDefault();
 
     // Get user input
     const email = document.getElementById("email").value;
@@ -48,3 +63,6 @@ document.getElementById("login").addEventListener("click", function (event) {
     console.log("Attempting to log in with:", email);
     loginUser(email, password);
 });
+
+// Call checkAuthentication on page load
+checkAuthentication();
