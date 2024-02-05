@@ -16,15 +16,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
-// Function to check if the user is already authenticated
-function checkAuthentication() {
-    onAuthStateChanged(auth, (user) => {
-        if (!user) {
-            // User is authenticated, redirect to the home page or dashboard
-            window.location.href = "/index.html";
-        }
-    });
-}
 
 // Function to handle login
 async function loginUser(email, password) {
@@ -37,6 +28,8 @@ async function loginUser(email, password) {
         sessionStorage.setItem('user_id', user.uid);
         sessionStorage.setItem('email', user.email);
 
+        document.getElementById("login").value = "Login successful...";
+
         // Redirect to the home page or dashboard
         window.location.href = "/home.html";
     } catch (error) {
@@ -44,6 +37,8 @@ async function loginUser(email, password) {
 
         console.log("Displaying login error message.");
         document.getElementById("wrongLogin").style.display = "block";
+
+        document.getElementById("login").value = "Sign in";
 
         setTimeout(() => {
             document.getElementById("wrongLogin").style.display = "none";
@@ -54,6 +49,8 @@ async function loginUser(email, password) {
 // Event listener for the login form
 document.getElementById("login").addEventListener("click", function (event) {
     event.preventDefault();
+
+    document.getElementById("login").value = "Checking...";
 
     // Get user input
     const email = document.getElementById("email").value;
