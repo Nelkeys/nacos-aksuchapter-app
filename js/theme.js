@@ -30,8 +30,8 @@ function setThemeFromLocalStorage() {
     }
 }
 
-// Set the theme in the head of the HTML document
+
+// Add the event listener after the DOM content has loaded
 document.addEventListener('DOMContentLoaded', function () {
     setThemeFromLocalStorage();
-    // Add other code related to your content here
 });

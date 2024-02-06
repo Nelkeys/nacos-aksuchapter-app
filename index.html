@@ -6,6 +6,7 @@
     <meta name="theme-color" content="#fff" class="theme-color-stuff">
     <link rel="icon" type="image/png" href="/assets/logo/logo.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="/css/index.css">
     <script src="js/loader.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.4/firebase-auth.js"></script>
@@ -23,8 +24,13 @@
 
 
     <form action="javascript:void(0)">
-        <input type="email" name="" id="email" placeholder="Email">
-        <input type="password" name="" id="password" placeholder="Password">
+        <input type="email" name="" id="email" placeholder="Email" required>
+
+        <div class="password-area">
+            <input type="password" name="" id="password" placeholder="Password">
+            <i class="fa-solid fa-eye" id="show" onclick="showPassword()"></i>
+            <i class="fa-solid fa-eye-slash" id="hide" onclick="hidePassword()" style="display: none;"></i>
+        </div>
 
         <p id="wrongLogin">Invalid login credentials!</p>
 
@@ -42,6 +48,19 @@
 
 
 
+    <script>
+        function showPassword() {
+            document.getElementById("password").type = "text";
+            document.getElementById("show").style.display = "none";
+            document.getElementById("hide").style.display = "block";
+        }
+
+        function hidePassword() {
+            document.getElementById("password").type = "password";
+            document.getElementById("show").style.display = "block";
+            document.getElementById("hide").style.display = "none";
+        }
+    </script>
     <script type="module" src="js/login.js"></script>
 </body>
 </html>

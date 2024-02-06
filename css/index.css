@@ -28,8 +28,9 @@ form{
     gap: 1em;
     margin-top: 7em;
 }
-form input{
+form #email{
     width: 100%;
+    height: 3em;
     padding: 1em 1.5em;
     border-radius: 5px;
     border: none;
@@ -37,16 +38,48 @@ form input{
     background:#c6e2e2;
     color: var(--dark-background);
 }
+.password-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 1.5em;
+    width: 100%;
+    height: 3em;
+    background: red;
+    background:#c6e2e2;
+    color: var(--dark-background);
+    border-radius: 5px;
+}
+.password-area i{
+    font-size: 90%;
+    cursor: pointer;
+}
+#password{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+
 #login{
     background: var(--greenColor);
     color: var(--white);
     letter-spacing: 2px;
+    width: 100%;
+    height: 3em;
+    border: none;
+    border-radius: 5px;
 }
 form p{
     color: red;
     text-align: start;
     display: none;
 }
+
 
 
 

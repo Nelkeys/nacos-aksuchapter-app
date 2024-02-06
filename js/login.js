@@ -61,5 +61,16 @@ document.getElementById("login").addEventListener("click", function (event) {
     loginUser(email, password);
 });
 
-// Call checkAuthentication on page load
-checkAuthentication();
+
+// Add event listener for authentication state changes
+onAuthStateChanged(auth, user => {
+    if(user) {
+        console.log("User is authenticated.");
+    } else {
+        console.log("User is not authenticated. Redirecting to login page");
+        window.location.href = "../index.html";
+    }
+});
+
+
+
