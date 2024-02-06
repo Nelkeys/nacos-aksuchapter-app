@@ -16,7 +16,6 @@ function toggleLightMode() {
     document.getElementById('moon').style.display = 'inline-block';
     document.getElementById('sun').style.display = 'none';
 
-  
     localStorage.setItem('theme', 'light');
 }
 
@@ -31,5 +30,8 @@ function setThemeFromLocalStorage() {
     }
 }
 
-// Set the theme when the page loads
-document.addEventListener('DOMContentLoaded', setThemeFromLocalStorage);
+// Set the theme in the head of the HTML document
+document.addEventListener('DOMContentLoaded', function () {
+    setThemeFromLocalStorage();
+    // Add other code related to your content here
+});

@@ -2,8 +2,7 @@
 
 
 body{
-    padding: 2em;
-   
+    padding: 1.5em;
 }
 
 .logo{
@@ -26,7 +25,7 @@ form{
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 1.5em;
+    gap: 1em;
     margin-top: 7em;
 }
 form input{
@@ -52,7 +51,7 @@ form p{
 
 
 .info{
-    margin-top: 7em;
+    margin-top: 10em;
     text-align: center;
     color: var(--headingText);
 }
