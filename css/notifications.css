@@ -16,11 +16,11 @@ header p{
 
 .not-box{
     background: var(--notificationBox);
-    padding: 2em 1.5em;
+    padding: 1.5em 1em;
     display: flex;
     align-items: left;
     flex-direction: column;
-    gap: 1em;
+    gap: .5em;
     border-radius: .2em;
     margin-bottom: 1em;
 }
