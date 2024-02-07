@@ -15,6 +15,20 @@
     <link rel="stylesheet" href="/css/home.css">
     <script src="js/authCheck.js"></script>
     <title>Home</title>
+
+    <script>
+        // Check authentication state
+        firebase.auth().onAuthStateChanged(function(user) {
+        if (!user) {
+            // User is not signed in, redirect to login page
+            window.location.replace("../inde.html");
+        }
+        });
+
+    </script>
+
+
+
 </head>
 <body>
 

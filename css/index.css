@@ -28,6 +28,13 @@ form{
     gap: 1em;
     margin-top: 7em;
 }
+
+/* Disable autofill input color change */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #c6e2e2 inset !important;
+}
+  
+
 form #email{
     width: 100%;
     height: 3em;
@@ -42,27 +49,28 @@ form #email{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1em 1.5em;
+    padding: 0;
     width: 100%;
-    height: 3em;
-    background: red;
     background:#c6e2e2;
     color: var(--dark-background);
+    border-radius: 5px;
+    padding-right: 1em;
+}
+#password{
+    background: transparent;
+    width: 100%;
+    height: 3em;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 1em 1.5em;
     border-radius: 5px;
 }
 .password-area i{
     font-size: 90%;
     cursor: pointer;
 }
-#password{
-    background: transparent;
-    width: 100%;
-    height: 100%;
-    border: none;
-    outline: none;
-    margin: 0;
-    padding: 0;
-}
+
 
 
 #login{

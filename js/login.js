@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -62,15 +62,7 @@ document.getElementById("login").addEventListener("click", function (event) {
 });
 
 
-// Add event listener for authentication state changes
-onAuthStateChanged(auth, user => {
-    if(user) {
-        console.log("User is authenticated.");
-    } else {
-        console.log("User is not authenticated. Redirecting to login page");
-        window.location.href = "../index.html";
-    }
-});
+
 
 
 
