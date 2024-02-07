@@ -1,5 +1,6 @@
 // Function to toggle dark mode
 function toggleDarkMode() {
+    document.querySelector('.theme-color-stuff').setAttribute('content', '#01020A');
     if ((document.title).includes("Home")) {
 
         //Not the best practice; but help mitigate the errors
@@ -15,6 +16,7 @@ function toggleDarkMode() {
 }
 
 function toggleLightMode() {
+    document.querySelector('.theme-color-stuff').setAttribute('content', '#fff');
     if ((document.title).includes("Home")) {
         document.querySelector('.theme-color-stuff').setAttribute('content', '#fff');
 
