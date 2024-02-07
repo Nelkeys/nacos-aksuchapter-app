@@ -1,4 +1,8 @@
 [{
+    "courseCode": "GSS 101",
+    "courseName": "Use of English and Library",
+    "url":""
+}, {
     "courseCode": "GSS 111",
     "courseName": "Introduction To Computer",
     "url":""
@@ -21,5 +25,17 @@
 }, {
     "courseCode": "PHY 101",
     "courseName": "General Physics 1",
+    "url":""
+}, {
+    "courseCode": "PHY 181",
+    "courseName": "Practical General Physics 1",
+    "url":""
+}, {
+    "courseCode": "CHM 101",
+    "courseName": "General Chemistry 1",
+    "url":""
+}, {
+    "courseCode": "CHM 107",
+    "courseName": "Practical General Chemistry 1",
     "url":""
 }]
