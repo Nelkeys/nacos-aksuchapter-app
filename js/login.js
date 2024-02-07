@@ -1,5 +1,10 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+import {
+    initializeApp
+} from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+import {
+    getAuth,
+    signInWithEmailAndPassword
+} from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -24,9 +29,7 @@ async function loginUser(email, password) {
         const user = userCredential.user;
         console.log("User logged in:", user);
 
-        // Set session data on the client side (using sessionStorage)
-        sessionStorage.setItem('user_id', user.uid);
-        sessionStorage.setItem('email', user.email);
+        sessionStorage.setItem("userSession", user)
 
         document.getElementById("login").value = "Login successful...";
 
@@ -60,9 +63,3 @@ document.getElementById("login").addEventListener("click", function (event) {
     console.log("Attempting to log in with:", email);
     loginUser(email, password);
 });
-
-
-
-
-
-
