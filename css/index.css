@@ -82,6 +82,9 @@ form #email{
     border: none;
     border-radius: 5px;
 }
+#login:active{
+    background: var(--clickedLogin);
+}
 form p{
     color: red;
     text-align: start;

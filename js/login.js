@@ -31,8 +31,6 @@ async function loginUser(email, password) {
 
         sessionStorage.setItem("userSession", user)
 
-        document.getElementById("login").value = "Login successful...";
-
         // Redirect to the home page or dashboard
         window.location.href = "/home.html";
     } catch (error) {
@@ -52,8 +50,6 @@ async function loginUser(email, password) {
 // Event listener for the login form
 document.getElementById("login").addEventListener("click", function (event) {
     event.preventDefault();
-
-    document.getElementById("login").value = "Checking...";
 
     // Get user input
     const email = document.getElementById("email").value;
