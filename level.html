@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/logo/logo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/levels.css">
+    <script src="/js/loader.js"></script>
+    <script src="/js/theme.js"></script>
+    <script type="module" src="js/login.js"></script>
+    <meta name="theme-color" content="" class="theme-color-stuff">
+    <title>Materials</title>
+</head>
+<body>
+    
+    <div class="overlay" id="overlay"></div>
+    <div class="loader" id="loader"></div>
+
+    <header>
+        <i class='bx bx-arrow-back' onclick="window.location.href='/materials-levels.html';"></i>
+        <p id="currentLevelIndicator">...</p>
+    </header>
+
+
+
+    <div class="illustration">
+        <p>View documents for current semester..</p>
+        <img src="/assets/illustrations/pdf.svg" alt="">
+    </div>
+    
+    <section class="course-list">
+    </section>
+
+    <footer>
+        <a href="../home.html" onclick="showLoader()" class="page-link">
+            <i class='bx bx-home-alt-2' ></i>
+            <p>Home</p>
+        </a>
+
+        <a href="../materials-levels.html" onclick="showLoader()" class="active page-link">
+            <i class='bx bx-book-content'></i>
+            <p>Materials</p>
+        </a>
+
+        <a href="../past-questions.html" onclick="showLoader()" class="page-link">
+            <i class='bx bx-history'></i>
+            <p>Questions</p>
+        </a>
+
+        <a href="../notifications.html" onclick="showLoader()" class="page-link">
+            <i class='bx bx-bell' ></i>
+            <p>Notifications</p>
+        </a>
+    </footer>
+
+
+    <script type="module" src="/js/levelPopulator.js"></script>
+</body>
+</html>

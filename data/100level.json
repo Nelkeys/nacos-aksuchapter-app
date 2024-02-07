@@ -1,0 +1,25 @@
+[{
+    "courseCode": "GSS 111",
+    "courseName": "Introduction To Computer",
+    "url":""
+}, {
+    "courseCode": "CSC 101",
+    "courseName": "Introduction to Programming using QBasic",
+    "url":""
+}, {
+    "courseCode": "BIO 101",
+    "courseName": "General Biology 1",
+    "url":""
+}, {
+    "courseCode": "MTH 111",
+    "courseName": "Algebra & Trigonometry",
+    "url":""
+}, {
+    "courseCode": "STA 111",
+    "courseName": "Basic Statistics",
+    "url":""
+}, {
+    "courseCode": "PHY 101",
+    "courseName": "General Physics 1",
+    "url":""
+}]

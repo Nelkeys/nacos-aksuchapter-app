@@ -1,0 +1,48 @@
+[
+    {
+      "courseCode": "CSC 401",
+      "courseName": "Object Oriented Programming",
+      "url": ""
+    },
+    {
+      "courseCode": "CSC 411",
+      "courseName": "Software Engineering",
+      "url": ""
+    },
+    {
+      "courseCode": "CSC 421",
+      "courseName": "Algorithms And Complexity Analysis",
+      "url": ""
+    },
+    {
+      "courseCode": "CSC 431",
+      "courseName": "Database Design And Management II",
+      "url": ""
+    },
+    {
+      "courseCode": "CSC 441",
+      "courseName": "Survey Of Programming Language",
+      "url": ""
+    },
+    {
+      "courseCode": "CSC 451",
+      "courseName": "Special Topics In Computer Science",
+      "url": ""
+    },
+    {
+      "courseCode": "CSC 481",
+      "courseName": "Information Technology Law",
+      "url": ""
+    },
+    {
+      "courseCode": "CSC 461",
+      "courseName": "Project Management",
+      "url": ""
+    },
+    {
+      "courseCode": "CSC 471",
+      "courseName": "Computer Graphics & Visualization",
+      "url": ""
+    }
+  ]
+  

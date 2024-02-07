@@ -1,0 +1,17 @@
+[{
+        "level": 100,
+        "url": "/level.html?level=100"
+    },
+    {
+        "level": 200,
+        "url": "/level.html?level=200"
+    },
+    {
+        "level": 300,
+        "url": "/level.html?level=300"
+    },
+    {
+        "level": 400,
+        "url": "/level.html?level=400"
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+      "courseCode": "GSS 300",
+      "courseName": "Introduction To Entrepreneurial Skills",
+      "url": ""
+    },
+    {
+      "courseCode": "CSC 311",
+      "courseName": "Data Structures And Algorithms",
+      "url": ""
+    },
+    {
+      "courseCode": "CSC 321",
+      "courseName": "Database Design And Management",
+      "url": ""
+    },
+    {
+      "courseCode": "CSC 331",
+      "courseName": "Compiler Construction",
+      "url": ""
+    },
+    {
+      "courseCode": "CSC 341",
+      "courseName": "Structured Programming",
+      "url": ""
+    },
+    {
+      "courseCode": "MTH 311",
+      "courseName": "System Analysis And Design",
+      "url": ""
+    },
+    {
+      "courseCode": "CSC 381",
+      "courseName": "Human Computer Interface (HCI)",
+      "url": ""
+    },
+    {
+      "courseCode": "CSC 361",
+      "courseName": "Intriduction To operation Research",
+      "url": ""
+    },
+    {
+      "courseCode": "CSC 371",
+      "courseName": "Numerical methods And Computational Science",
+      "url": ""
+    }
+  ]
+  
