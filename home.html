@@ -11,7 +11,6 @@
     <link rel="manifest" href="/manifest.json">
     <script src="js/loader.js"></script>
     <script src="js/install_prompt.js"></script>
-    <script type="module" src="js/login.js"></script>
     <link rel="stylesheet" href="/css/home.css">
     <script src="js/authCheck.js"></script>
     <title>Home</title>
@@ -21,7 +20,7 @@
         firebase.auth().onAuthStateChanged(function(user) {
         if (!user) {
             // User is not signed in, redirect to login page
-            window.location.replace("../inde.html");
+            window.location.replace("../index.html");
         }
         });
 
@@ -92,6 +91,10 @@
 
             <i class='bx bx-info-circle' onclick="showAboutContaner()"></i>
         </div>
+
+        <script>
+            setThemeFromLocalStorage()
+        </script>
     </header>
 
 

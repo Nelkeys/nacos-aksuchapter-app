@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <script src="js/theme.js"></script>
     <meta charset="UTF-8">
@@ -8,12 +9,16 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/notifications.css">
     <script src="js/loader.js"></script>
-    <script type="module" src="js/login.js"></script>
     <meta name="theme-color" content="" class="theme-color-stuff">
     <title>Notifications</title>
 </head>
-<body>
 
+<body>
+    <script>
+        setThemeFromLocalStorage()
+    </script>
+
+    <!-- Theme is checked as soon as document body is initialized -->
     <div class="overlay" id="overlay"></div>
     <div class="loader" id="loader"></div>
 
@@ -21,7 +26,7 @@
     <header>
         <p><b>Notifications</b></p>
     </header>
-    
+
 
 
     <section class="notification-boxes">
@@ -41,7 +46,7 @@
             </div>
         </div>
     </section>
-   
+
 
 
 
@@ -52,7 +57,7 @@
 
     <footer>
         <a href="home.html" onclick="showLoader()" class="page-link">
-            <i class='bx bx-home-alt-2 page-link' ></i>
+            <i class='bx bx-home-alt-2 page-link'></i>
             <p>Home</p>
         </a>
 
@@ -67,11 +72,12 @@
         </a>
 
         <a href="notifications.html" onclick="showLoader()" class="active page-link">
-            <i class='bx bx-bell ' ></i>
+            <i class='bx bx-bell '></i>
             <p>Notifications</p>
         </a>
     </footer>
 
 
 </body>
+
 </html>
