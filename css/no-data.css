@@ -1,6 +1,10 @@
 @import url(/css/general/styles.css) all;
 
 
+body{
+    background: var(--dark-background);
+}
+
 
 .go-back{
     margin-top: 3em;
