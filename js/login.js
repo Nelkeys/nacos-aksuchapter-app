@@ -34,6 +34,7 @@ async function loginUser(email, password) {
 
         // Redirect to the home page or dashboard
         window.location.href = "/home.html";
+        document.getElementById("login-loader").style.display = 'none';
     } catch (error) {
         document.getElementById("login-loader").style.display = 'none';
         console.error("Login error:", error.message);
