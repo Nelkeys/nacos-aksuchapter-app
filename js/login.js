@@ -25,6 +25,7 @@ const auth = getAuth(app);
 // Function to handle login
 async function loginUser(email, password) {
     try {
+        document.getElementById("login-loader").style.display = 'inline-block';
         const userCredential = await signInWithEmailAndPassword(auth, email, password);
         const user = userCredential.user;
         console.log("User logged in:", user);
@@ -34,6 +35,7 @@ async function loginUser(email, password) {
         // Redirect to the home page or dashboard
         window.location.href = "/home.html";
     } catch (error) {
+        document.getElementById("login-loader").style.display = 'none';
         console.error("Login error:", error.message);
 
         console.log("Displaying login error message.");
