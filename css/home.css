@@ -276,7 +276,7 @@ body.dark-mode .welcome h2 span{
 }
 body.dark-mode .link-container a{
     box-shadow: 0 0 2px #464646;
-    background: linear-gradient(to right, #00920062, #8f8f8f1c, #0a0aa657);
+    background: linear-gradient(to right,  #0a0aa657, #8f8f8f1c, #00920062);
 }
 body.dark-mode .icons{
     box-shadow: 0 0 2px var(--d-mode-grey);
