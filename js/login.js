@@ -39,7 +39,11 @@ async function loginUser(email, password) {
         setTimeout(()=> {
              // Redirect to the home page or dashboard
             window.location.href = "/home.html";
-            document.getElementById("verified-login").style.display = "none";
+            
+            setTimeout(() =>{
+                document.getElementById("verified-login").style.display = "none";
+            }, 2000);
+
         }, 2000);
 
     
