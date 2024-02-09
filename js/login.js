@@ -39,6 +39,7 @@ async function loginUser(email, password) {
         setTimeout(()=> {
              // Redirect to the home page or dashboard
             window.location.href = "/home.html";
+            document.getElementById("verified-login").style.display = "none";
         }, 2000);
 
     
@@ -58,7 +59,7 @@ async function loginUser(email, password) {
 }
 
 
-document.getElementById("verified-login").style.display = "none";
+
 
 // Event listener for the login form
 document.getElementById("login").addEventListener("click", function (event) {
