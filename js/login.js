@@ -41,7 +41,6 @@ async function loginUser(email, password) {
             window.location.href = "/home.html";
         }, 2000);
 
-       
     
     } catch (error) {
         document.getElementById("login-loader").style.display = 'none';
@@ -57,6 +56,9 @@ async function loginUser(email, password) {
         }, 3000);
     }
 }
+
+
+document.getElementById("verified-login").style.display = "none";
 
 // Event listener for the login form
 document.getElementById("login").addEventListener("click", function (event) {
