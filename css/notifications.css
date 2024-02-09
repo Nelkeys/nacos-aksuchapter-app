@@ -44,7 +44,7 @@ header p{
     color: var(--primaryColor);
 }
 .not-content{
-    color: var(--headingText);
+    color: var(--dark-background);
     font-size: 85%;
     font-weight: 100;
 }
