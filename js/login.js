@@ -32,9 +32,17 @@ async function loginUser(email, password) {
 
         sessionStorage.setItem("userSession", user)
 
-        // Redirect to the home page or dashboard
-        window.location.href = "/home.html";
+        document.getElementById("verified-login").style.display = "block";
         document.getElementById("login-loader").style.display = 'none';
+
+
+        setTimeout(()=> {
+             // Redirect to the home page or dashboard
+            window.location.href = "/home.html";
+        }, 2000);
+
+       
+    
     } catch (error) {
         document.getElementById("login-loader").style.display = 'none';
         console.error("Login error:", error.message);
