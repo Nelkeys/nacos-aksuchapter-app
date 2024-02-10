@@ -10,7 +10,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 1.5em;
+    margin-top: 2em;
 }
 .logo img{
     width: 5em;
@@ -25,7 +25,7 @@ form{
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 1em;
+    gap: 1.2em;
     margin-top: 4em;
 }
 
@@ -34,9 +34,6 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px #c6e2e2 inset !important;
 }
   
-input{
-    width: auto;
-}
 
 .names{
     background-color: red;    
@@ -105,7 +102,7 @@ form p{
 
 
 .to-sign-in{
-    margin-top: 1em;
+    margin-top: 2em;
     text-align: center;
     color: var(--headingText);
 }
