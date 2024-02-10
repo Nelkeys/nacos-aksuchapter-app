@@ -58,7 +58,7 @@ body.dark-mode .title{
 }
 body.dark-mode .not-content{
     color: var(--white);
-    font-weight: 100;
+    font-weight: 350;
 }
 body.dark-mode .date{
     color: var(--normalText);
