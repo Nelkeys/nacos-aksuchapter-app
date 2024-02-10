@@ -42,15 +42,11 @@ let signInForm = document.getElementById("signInForm");
 let signInUser = evt => {
     evt.preventDefault();
 
+    // Display loader when sign-in process starts
     document.getElementById("login-loader").style.display = 'inline-block';
 
     signInWithEmailAndPassword(auth, Email.value, Password.value)
     .then((userCredential) => {
-
-        document.getElementById("verified-login").style.display = "block";
-        document.getElementById("login-loader").style.display = 'none';
-
-
         get(child(dbref, 'userAuthList/' + userCredential.user.uid)).then((snapshot) => {
             if(snapshot.exists()){
                 const userData = snapshot.val(); 
@@ -61,35 +57,32 @@ let signInUser = evt => {
 
                 }))
                 sessionStorage.setItem("user-creds", JSON.stringify(userCredential));
+                // Redirect to the home page or dashboard
+                setTimeout(()=> {
+                    // Redirect to the home page or dashboard
+                   window.location.href = "/home.html";
+       
+                   setTimeout(() =>{
+                       document.getElementById("verified-login").style.display = "none";
+                   }, 2000);
+       
+               }, 2000);//timeout still not working
             }
         })
-
-        setTimeout(()=> {
-            // Redirect to the home page or dashboard
-           window.location.href = "/home.html";
-
-           setTimeout(() =>{
-               document.getElementById("verified-login").style.display = "none";
-           }, 2000);
-
-       }, 2000);
-
+        .catch((error) => {
+            // Hide loader and display error message
+            document.getElementById("login-loader").style.display = 'none';
+            alert(error.message);
+            console.error("Error fetching user data:", error);
+        });
     })
     .catch((error) => {
+        // Hide loader and display error message
         document.getElementById("login-loader").style.display = 'none';
-        console.error("Login error:", error.message);
-
-        console.log("Displaying login error message.");
-        document.getElementById("wrongLogin").style.display = "block";
-
-        document.getElementById("login").value = "Sign in";
-
-        setTimeout(() => {
-            document.getElementById("wrongLogin").style.display = "none";
-        }, 3000);
+        alert(error.message);
+        console.error("Error signing in:", error);
     });
 }
-
 
 
 

@@ -46,31 +46,26 @@ let signUpForm = document.getElementById("signUpForm");
 let RegisterUser = evt => {
     evt.preventDefault();
 
-    document.getElementById("login-loader").style.display = 'inline-block';
-
     createUserWithEmailAndPassword(auth, Email.value, Password.value)
     .then((userCredential) => {
-
-        document.getElementById("login-loader").style.display = 'none';
-
         console.log(userCredential);
         set(ref(db,'userAuthList/' + userCredential.user.uid),{
             firstname : firstName.value,
             lastname : lastName.value,
             registrationNumber : regNumber.value
         })
-
-        window.location.href = "/";
+        .then(() => {
+            // Redirect to index.html after successful registration
+            window.location.href = "index.html";
+        })
+        .catch((error) => {
+            console.error("Error updating database:", error);
+        });
     })
     .catch((error) => {
-        document.getElementById("wrongLogin").style.display = "block";
-        document.getElementById("login-loader").style.display = 'none';
+        alert(error.message);
         console.log(error.code);
         console.log(error.message);
-
-        setTimeout(() => {
-            document.getElementById("wrongLogin").style.display = "none";
-        }, 3000);
     });
 }
 

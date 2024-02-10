@@ -6,8 +6,7 @@ function checkUserSession(){
     return true; // User session is valid
   } else {
     // Redirect the user to the login page if there is no user session
-    window.location.replace("/"); 
-    return false; // User session is not valid
+    window.location.replace("/");  // User session is not valid
   }
 }
 
