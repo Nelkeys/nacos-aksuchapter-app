@@ -12,7 +12,7 @@
     <script src="js/loader.js"></script>
     <script src="js/install_prompt.js"></script>
     <link rel="stylesheet" href="/css/home.css">
-    <script src="js/authCheck.js"></script>
+    <script src="js/authCheck.js"></script> 
     <title>Home</title>
 
 </head>
@@ -64,7 +64,7 @@
 
     <header>
         <div class="welcome">
-            <h2>Wel<span>come</span></h2>
+            <h2>Hello, <span id="owner"></span></h2> 
             <p>A <span><b>NACOS</b></span> platform for managing and getting information...</p>
         </div>
 
@@ -78,10 +78,6 @@
 
             <i class='bx bx-info-circle' onclick="showAboutContaner()"></i>
         </div>
-
-        <script>
-            setThemeFromLocalStorage()
-        </script>
     </header>
 
 
@@ -156,5 +152,37 @@
         }
     </script>
     <script src="js/message.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // Function to update the owner element with the signed-in user's firstname
+        function updateOwnerName() {
+            // Get the user info from sessionStorage
+            let userInfo = sessionStorage.getItem("user-info");
+            
+            userInfo = JSON.parse(userInfo);
+
+            let firstname = userInfo.firstname;
+
+            document.getElementById("owner").textContent = firstname;
+        }
+
+        // Call the function to update the owner element when the page loads
+        window.onload = updateOwnerName;
+    </script>
+    <script>
+            setThemeFromLocalStorage()
+    </script>
 </body>
 </html>

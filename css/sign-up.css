@@ -10,7 +10,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 5em;
+    margin-top: 1.5em;
 }
 .logo img{
     width: 5em;
@@ -26,7 +26,7 @@ form{
     align-items: center;
     flex-direction: column;
     gap: 1em;
-    margin-top: 7em;
+    margin-top: 4em;
 }
 
 /* Disable autofill input color change */
@@ -34,8 +34,19 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px #c6e2e2 inset !important;
 }
   
+input{
+    width: auto;
+}
 
-form #email{
+.names{
+    background-color: red;    
+}
+
+
+form #email,
+form #first_name,
+form #last_name,
+form #reg_number{
     width: 100%;
     height: 3em;
     padding: 1em 1.5em;
@@ -45,7 +56,7 @@ form #email{
     background:#c6e2e2;
     color: var(--dark-background);
 }
-.password-area{
+.password-div{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,6 +67,7 @@ form #email{
     border-radius: 5px;
     padding-right: 1em;
 }
+
 #password{
     background: transparent;
     width: 100%;
@@ -66,14 +78,14 @@ form #email{
     padding: 1em 1.5em;
     border-radius: 5px;
 }
-.password-area i{
+.password-div i{
     font-size: 90%;
     cursor: pointer;
 }
 
 
 
-#login{
+#btnSubmit{
     background: var(--greenColor);
     color: var(--white);
     letter-spacing: 2px;
@@ -82,7 +94,7 @@ form #email{
     border: none;
     border-radius: 5px;
 }
-#login:active{
+#btnSubmit:active{
     background: var(--clickedLogin);
 }
 form p{
@@ -92,25 +104,21 @@ form p{
 }
 
 
-.to-sign-up{
-    margin-top: 2em;
+.to-sign-in{
+    margin-top: 1em;
     text-align: center;
     color: var(--headingText);
 }
-.to-sign-up p a{
+.to-sign-in p a{
     color: var(--greenColor);
 }
 
 
-
-
-
 .info{
-    margin-top: 10em;
+    margin-top: 7em;
     text-align: center;
     color: var(--headingText);
 }
-
 
 
 
@@ -132,47 +140,3 @@ form p{
   }
 
 
-
-
-
-
-  .verified-login{
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    display: none; 
-    justify-content: center;
-    backdrop-filter: blur(3px);
-    z-index: 700;
-  }
-
-
-  .verf{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1em;
-    background: #fff;
-    padding: 2em 1em;
-    margin: 2em;
-    box-shadow: 0 0 7px var(--grey);
-    position: fixed;
-    top: 35%;
-    left: 0;
-    right: 0;
-    border-radius: 1em;
-  }
-
-  .verf i{
-    color: var(--greenColor);
-    font-weight: 550;
-    font-size: 500%;
-  }
-  .verf p{
-    font-size: 150%;
-    font-weight: 100;
-    font-family:fantasy;
-  }

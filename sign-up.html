@@ -7,48 +7,47 @@
     <link rel="icon" type="image/png" href="/assets/logo/logo.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="/css/index.css">
-    <script src="js/loader.js"></script>
+    <link rel="stylesheet" href="/css/sign-up.css">
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js"></script>
-   <!-- <script type="module" src="js/firebase_initialization.js"></script>  -->
-    <title>Login | NACOS AKSU APP</title>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js"></script>
+    <title>Sign-up | NACOS AKSU APP</title>
 </head>
 <body>
 
-    <div class="verified-login" id="verified-login">
-        <div class="verf">
-            <i class='bx bx-check-circle bx-tada' ></i>   
-            <p>Login Verified</p>
-        </div>
-    </div>
-
-
-
     <div class="logo">
         <img src="assets/logo/logo.png" alt="">
-        <h2>Sign in</h2>
+        <h2>Sign up</h2>
     </div>
 
 
+    <form action="javascript:void(0)" id="signUpForm">
 
-    <form action="javascript:void(0)" id="signInForm">
+        <input type="text" name="first_name" id="first_name" placeholder="First name" required>
+
+        <input type="text" name="last_name" id="last_name" placeholder="Last name" required>
+        
+        <input type="text" name="" id="reg_number" placeholder="Reg. Number" required>
+
         <input type="email" name="" id="email" placeholder="Email" required>
 
-        <div class="password-area">
+        <div class="password-div">  
             <input type="password" name="" id="password" placeholder="Password">
             <i class="fa-solid fa-eye" id="show" onclick="showPassword()"></i>
             <i class="fa-solid fa-eye-slash" id="hide" onclick="hidePassword()" style="display: none;"></i>
         </div>
 
-        <p id="wrongLogin">Invalid login credentials!</p>
+        <p id="wrongLogin">Error! Fill in details properly</p>
 
-        <button type="submit" id="login">Log In</button>
+
+        <button type="submit" id="btnSubmit">Create Account</button>
         <div class="login-loader" id="login-loader"></div>
     </form>
 
-     <div class="to-sign-up">
-        <p>Don’t have an account? <a href="/sign-up.html">Sign up</a></p>
-     </div>
+    <div class="to-sign-in">
+        <p>Already have an account? <a href="/index.html">Sign in</a></p>
+    </div>
+
 
 
     <div class="info">
@@ -61,7 +60,9 @@
 
 
 
-    <script>
+
+
+     <script>
         function showPassword() {
             document.getElementById("password").type = "text";
             document.getElementById("show").style.display = "none";
@@ -74,6 +75,6 @@
             document.getElementById("hide").style.display = "none";
         }
     </script>
-    <script type="module" src="js/sign-in.js"></script>
+    <script type="module" src="js/sign-up.js"></script>
 </body>
 </html>
