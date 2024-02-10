@@ -10,7 +10,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 2em;
+    margin-top: 1.5em;
 }
 .logo img{
     width: 5em;
