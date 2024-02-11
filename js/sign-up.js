@@ -8,7 +8,8 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
 import {
     getAuth,
-    createUserWithEmailAndPassword
+    createUserWithEmailAndPassword,
+    sendEmailVerification
 } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 
 
@@ -46,8 +47,18 @@ let signUpForm = document.getElementById("signUpForm");
 let RegisterUser = evt => {
     evt.preventDefault();
 
+    document.getElementById("login-loader").style.display = 'inline-block';
+
     createUserWithEmailAndPassword(auth, Email.value, Password.value)
     .then((userCredential) => {
+
+        /*
+        sendEmailVerification(auth.currentUser)
+            .then(() => {
+                alert("Email verification link sent!");
+            });
+        */
+
         console.log(userCredential);
         set(ref(db,'userAuthList/' + userCredential.user.uid),{
             firstname : firstName.value,
@@ -57,6 +68,7 @@ let RegisterUser = evt => {
         .then(() => {
             // Redirect to index.html after successful registration
             window.location.href = "index.html";
+            document.getElementById("login-loader").style.display = 'none';
         })
         .catch((error) => {
             console.error("Error updating database:", error);

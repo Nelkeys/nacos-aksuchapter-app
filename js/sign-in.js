@@ -59,14 +59,15 @@ let signInUser = evt => {
                 sessionStorage.setItem("user-creds", JSON.stringify(userCredential));
                 // Redirect to the home page or dashboard
                 setTimeout(()=> {
+                    document.getElementById("login-loader").style.display = 'none';
                     // Redirect to the home page or dashboard
-                   window.location.href = "/home.html";
-       
+                    document.getElementById("verified-login").style.display = "block";
+
                    setTimeout(() =>{
-                       document.getElementById("verified-login").style.display = "none";
+                        window.location.href = "/home.html";
                    }, 2000);
        
-               }, 2000);//timeout still not working
+                }, 2000);
             }
         })
         .catch((error) => {
