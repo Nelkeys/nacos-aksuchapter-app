@@ -294,7 +294,7 @@ body.dark-mode .feedbackPopup{
     box-shadow: 0 0 3px var(--grey);
 }
 body.dark-mode .feedbackPopup p{
-    color: var(--grey);
+    color: var(--white);
 }
 body.dark-mode .button-and-cancel button{
     background: var(--white);
