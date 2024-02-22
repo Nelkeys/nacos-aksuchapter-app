@@ -80,8 +80,13 @@ let signInUser = evt => {
     .catch((error) => {
         // Hide loader and display error message
         document.getElementById("login-loader").style.display = 'none';
-        alert(error.message);
+        // alert(error.message);
         console.error("Error signing in:", error);
+        document.getElementById("networkError").style.display= "block"
+
+        setTimeout(() => {
+            document.getElementById("networkError").style.display="none"
+        }, 2000)
     });
 }
 
