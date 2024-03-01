@@ -67,8 +67,16 @@ let RegisterUser = evt => {
         })
         .then(() => {
             // Redirect to index.html after successful registration
-            window.location.href = "index.html";
-            document.getElementById("login-loader").style.display = 'none';
+            setTimeout(()=> {
+                document.getElementById("login-loader").style.display = 'none';
+                // Redirect to the home page or dashboard
+                document.getElementById("verified-signup").style.display = "flex";
+
+               setTimeout(() =>{
+                    window.location.href = "/";
+               }, 2000);
+   
+            }, 2000);
         })
         .catch((error) => {
             console.error("Error updating database:", error);

@@ -61,7 +61,7 @@ let signInUser = evt => {
                 setTimeout(()=> {
                     document.getElementById("login-loader").style.display = 'none';
                     // Redirect to the home page or dashboard
-                    document.getElementById("verified-login").style.display = "block";
+                    document.getElementById("verified-login").style.display = "flex";
 
                    setTimeout(() =>{
                         window.location.href = "/home.html";
