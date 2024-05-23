@@ -1,4 +1,4 @@
-🚀 ![NACOS AKSU LOGO](/assets/logo/logo.png) 🚀
+![NACOS AKSU LOGO](/assets/logo/logo.png)
 
 
 
