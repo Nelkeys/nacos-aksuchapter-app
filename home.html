@@ -13,6 +13,10 @@
     <script src="js/install_prompt.js"></script>
     <link rel="stylesheet" href="/css/home.css">
     <script src="js/authCheck.js"></script> 
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <title>Home</title>
 
 </head>
@@ -64,7 +68,7 @@
 
     <header>
         <div class="welcome">
-            <h2>Hello, <span id="owner"></span></h2> 
+            <h2 class="animate__bounceIn">Hello, <span id="owner"></span></h2> 
             <p>A <span><b>NACOS</b></span> platform for managing and getting information...</p>
         </div>
 
@@ -90,22 +94,22 @@
 
 
     <section class="link-container">
-        <a href="class-timetable.html" class="link purple" onclick="showLoader()">
+        <a href="class-timetable.html" class="link purple animate__fadeInLeft" onclick="showLoader()">
             <p><b>Class Timetable</b></p>
 
-            <img src="assets/illustrations/time-table.svg" alt="">
+            <img src="assets/illustrations/time-table.svg" class="animate__bounceOutLeft" alt="">
         </a>
 
         <a href="empty_files/no-data.html" class="link blue">
-            <img src="assets/illustrations/result.svg" alt="">
+            <img src="assets/illustrations/result.svg" class="animate__bounceInRight" alt="">
 
             <p><b>Results</b></p>
         </a>
 
-        <a href="empty_files/no-data.html" class="link green" onclick="showLoader()">
+        <a href="empty_files/no-data.html" class="link green animate__bounceOutLeft" onclick="showLoader()">
             <p><b>Exam Timetable</b></p>
 
-            <img src="assets/illustrations/exam.svg" alt="">
+            <img src="assets/illustrations/exam.svg" class="animate__bounceOutLeft" alt="">
         </a>
     </section>
 
