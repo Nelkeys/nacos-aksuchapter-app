@@ -52,6 +52,7 @@ form #reg_number{
     outline: none;
     background:#c6e2e2;
     color: var(--dark-background);
+    cursor: pointer;
 }
 .password-div{
     display: flex;
@@ -90,6 +91,7 @@ form #reg_number{
     height: 3em;
     border: none;
     border-radius: 2em;
+    cursor: pointer;
 }
 #btnSubmit:active{
     background: var(--clickedLogin);

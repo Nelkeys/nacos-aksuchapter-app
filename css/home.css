@@ -229,7 +229,7 @@ header h2 span{
     justify-content: space-between;
     gap: 2em;
     width: 100%;
-    border-radius: 2.4em;
+    border-radius: 2em;
     padding: 1.5em 2em;
     margin-bottom: 1em;
 }
@@ -274,8 +274,7 @@ body.dark-mode .welcome h2 span{
     color: var(--white);
 }
 body.dark-mode .link-container a{
-    box-shadow: 0 0 2px #464646;
-    background: #ffffff1c;
+    background: #ffffff11;
 }
 body.dark-mode .link-container p{
     color: #fff;
