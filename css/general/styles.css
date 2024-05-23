@@ -27,7 +27,7 @@
 
 
     /* Dark theme */
-    --dark-background:   #01020A;
+    --dark-background:   #0f0f0f;
     --dark-mode-header:  #1E1E1E;
     --d-mode-grey:#adb4bf;
 }
@@ -69,7 +69,7 @@ a:hover{
 }
   
 body{
-    background: #fff;
+    background: #f1f1f1;
     font-family:'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 14px;
 
@@ -104,7 +104,7 @@ header{
     right: 0;
     padding: 1em 1.5em;
     color: var(--headingText);
-    background: #fff;
+    background: #f1f1f1;
     box-shadow: 0 0 3px #d6d6d6;
     -webkit-tap-highlight-color: transparent;
     cursor: pointer;
@@ -131,7 +131,7 @@ footer{
     align-items: center;
     justify-content: space-evenly;
     padding: .2em .5em .5em .5em;
-    background: #fff;
+    background: #f1f1f1;
     box-shadow: 0 0 3px #d6d6d6;
 }
 .active{

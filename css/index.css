@@ -39,7 +39,7 @@ form #email{
     width: 100%;
     height: 3em;
     padding: 1em 1.5em;
-    border-radius: 5px;
+    border-radius: 2em;
     border: none;
     outline: none;
     background:#c6e2e2;
@@ -53,7 +53,7 @@ form #email{
     width: 100%;
     background:#c6e2e2;
     color: var(--dark-background);
-    border-radius: 5px;
+    border-radius: 2em;
     padding-right: 1em;
 }
 #password{
@@ -64,7 +64,7 @@ form #email{
     outline: none;
     margin: 0;
     padding: 1em 1.5em;
-    border-radius: 5px;
+    border-radius: 2em;
 }
 .password-area i{
     font-size: 90%;
@@ -80,7 +80,7 @@ form #email{
     width: 100%;
     height: 3em;
     border: none;
-    border-radius: 5px;
+    border-radius: 2em;
 }
 #login:active{
     background: var(--clickedLogin);

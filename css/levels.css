@@ -50,7 +50,7 @@ header p{
     gap: 1.5em;
     box-shadow: 0 2px 7px #aaaaaa70;
     padding: 1em 2em;
-    border-radius: .5em;
+    border-radius: 2em;
     margin-bottom: 1em;
 }
 .course:active{
