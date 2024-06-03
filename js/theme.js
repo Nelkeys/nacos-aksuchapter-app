@@ -1,11 +1,11 @@
 // Function to toggle dark mode
 function toggleDarkMode() {
-    document.querySelector('.theme-color-stuff').setAttribute('content', '#0f0f0f');
+    document.querySelector('.theme-color-stuff').setAttribute('content', '#00001a');
     if ((document.title).includes("Home")) {
 
         //Not the best practice; but help mitigate the errors
         //by chechking the screens current title
-        document.querySelector('.theme-color-stuff').setAttribute('content', '#01020A');
+        document.querySelector('.theme-color-stuff').setAttribute('content', '#00001a');
 
         document.getElementById('moon').style.display = 'none';
         document.getElementById('sun').style.display = 'inline-block';
@@ -16,7 +16,7 @@ function toggleDarkMode() {
 }
 
 function toggleLightMode() {
-    document.querySelector('.theme-color-stuff').setAttribute('content', '#f1f1f1');
+    document.querySelector('.theme-color-stuff').setAttribute('content', '#fff');
     if ((document.title).includes("Home")) {
         document.querySelector('.theme-color-stuff').setAttribute('content', '#fff');
 
